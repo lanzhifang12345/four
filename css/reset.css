@@ -1,0 +1,479 @@
+﻿/**********格式化**********/
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{ margin:0; }   ol,li,ul{margin:0; padding:0;}
+body{ background:#F4F4F4; font: 16px/150% "Microsoft YaHei", Verdana, Geneva, sans-serif;}
+ul{list-style: none; }
+li{ list-style:none; }
+input{ outline:none; font-family:"Microsoft YaHei"; }
+body{ font-family:"Microsoft YaHei"; }
+img{ border:none; }
+a{ text-decoration:none; }
+.clear{ zoom:1; }
+.clear:after{ display:block; content:''; clear:both; visibility:hidden; height:0; }
+/**********格式化 END**********/
+
+/*******公用样式*******/
+.contain_fluid{
+	width: 100%;
+	min-width: 1200px;
+}
+body{
+	min-width: 1200px;
+	padding-left: 0;
+	padding-right: 0px;
+
+}
+.contain{
+	width: 1200px;
+	margin: 0 auto;
+}
+.shadow {
+	position: relative;
+	top: 0;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
+	transition: all .25s;
+}
+.shadow:hover {
+	top: -2px;
+	box-shadow: 3px 8px 10px rgba(10, 10, 10, 0.06);
+	transition: all .25s;
+}
+/*******公用样式 END*******/
+
+/***********公共标题**********/
+.title_block_white{
+	position: relative;
+	padding-top: 46px;
+	margin-bottom: 12px;
+	min-width: 1200px;
+}
+.title_block_gray{
+	position: relative;
+	z-index: 1;
+	min-width: 1200px;
+	padding-top: 10px;
+	margin-bottom: 12px;
+}
+
+.title{
+}
+.title_text{
+	width: 112px;
+	margin-bottom: 18px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #040404;
+}
+.title_text > a {
+	color: #040404;
+}
+.title_block_gray .title_text{
+	background-color: #eff3f5;
+}
+.title_hr{
+	margin: auto;
+	width: 1200px;
+	height: 1px;
+	background-color: #dadada;
+}
+.btn_more_a{
+	display: block;
+	margin: 0 auto;
+	width: 48px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #04a9a7;
+	background-color: #04a9a7;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	text-align: center;
+	transition: all 400ms;
+}
+.title_block_white .btn_more_a{
+	background-color: transparent;
+	color: #04a9a7;
+}
+
+.btn_more_a:hover{
+	background-color: transparent;
+	color: #04a9a7;
+}
+.title_block_white .btn_more_a:hover{
+	background-color: #04a9a7;
+	color: #fff;
+}
+.more_link {
+	text-align: right;
+	margin-top: -12px;
+}
+.more_link a {
+	color: #707070;
+}
+.more_link a:hover {
+	color: #EF1C23;
+}
+/***********公共标题 END**********/
+
+
+/***********顶部导航条**********/
+.ns_ul{
+	float: right;
+	margin-top: 22px;
+}
+.ns_li{
+	float: left;
+	position: relative;
+	margin-left: 25px;
+}
+.ns_a{
+	display: block;
+	width: 104px;
+	height: 34px;
+	line-height: 34px;
+	color: #0a0700;
+	text-align: center;
+}
+.ns_li:hover > a,.ns_a_active{
+	background-color: #02b1b9;
+	color: #fff;
+}
+.ns_nav_ul{
+	position: absolute;
+	top: 34px;
+	left: 0;
+	z-index: 5;
+	display: none;
+}
+.ns_li:hover .ns_nav_ul{
+	display: block;
+}
+.ns_nav_li a{
+	display: block;
+	width: 104px;
+	height: 30px;
+	background-color: #02b1b9;
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+}
+.ns_nav_li a:hover{
+	background-color: #fff;
+	color: #02b1b9;
+}
+/***********顶部导航条 END**********/
+
+/**************模态框的样式**************/
+#goodcover {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 133%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.5;
+	opacity: 0.50;
+	filter: alpha(opacity=50);
+}
+/*****模态框:请登录后即可添加收藏*****/
+.modal_box{
+	border: 5px solid rgba(0,0,0,0.6);
+}
+.modal_prompts{
+	position: fixed;
+	left: 40%;
+	top: 30%;
+	z-index: 1002;
+	display: none;
+	width: 374px;
+	height: 158px;
+	background-color: #fff;	
+}
+.modal_addCollect{
+	left: 43%;
+	width: 256px;
+	height: 156px;
+}
+.modal_box_c{
+	left: 20%;
+	top: 15%;
+	width: 926px;
+	height: 656px;
+}
+.ltc_content{
+	margin-top: 55px;
+}
+.ltc_content_c{
+	margin-top: 60px;
+	height: 38px;
+	line-height: 38px;
+}
+.ltc_text{
+	height: 16px;
+	line-height: 16px;
+	font-size: 14px;
+	color: #000202;
+	text-align: center;
+}
+.ltc_text_c{
+	font-size: 34px;
+	color: #423e33;
+	text-align: center;
+}
+.ltc_btngroup_one{
+	text-align: center;
+}
+.ltc_btngroup_double{
+	height: 40px;
+	text-align: center;
+}
+.close{
+	width: 48px;
+	height: 26px;
+	margin-top: 26px;
+	padding: 0;
+	border: 1px solid #00c9c7;
+	color: #00c9c7;
+	line-height: 26px;
+	text-align: center;
+	background-color: transparent;
+}
+.close:hover{
+	color: #fff;
+	background-color: #00c9c7;
+}
+
+/******带有标题的模态框******/
+.modal_title{
+	position: relative;
+	height: 34px;
+	padding-left: 10px;
+	text-align: left;
+	background-color: #00c9c7;
+	color: #fff;
+	font-size: 14px;
+	line-height: 34px;
+}
+.modal_title_c{
+	height: 64px;
+}
+.close_box{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 14px;
+	height: 14px;
+}
+.close_box_c{
+	right: 20px;
+	top: 20px;
+	width: 28px;
+	height: 28px;
+}
+a.close{
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 0;
+	margin: 0;
+	background: #fff url(/Content/images/icon/spirit_icon.png) no-repeat -5px -165px;
+	color: #00c9c7;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+}
+a.close:hover{
+	background-color: #fff;
+	color: #00c9c7;
+}
+a.close_c{
+	width: 28px;
+	height: 28px;
+	background-position: 1px -182px;
+}
+.modal_content{
+	margin-top: 12px;
+	font-size: 12px;
+	color: #424242;
+}
+.modal_text{
+	text-align: center;
+}
+.modal_select{
+	width: 96px;
+	height: 18px;
+	font-size: 12px;
+	color: #000202;
+	border: 1px solid #c9c9c9;
+}
+.modal_addCls{
+	height: 24px;
+	margin-top: 8px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #424242;
+	text-align: center;
+}
+#m_add{
+	cursor: pointer;
+}
+.modal_add{
+	font-size: 12px;
+}
+#m_add_input{
+	display: none;
+	padding-left: 50px;
+	text-align: left;
+} 
+
+.modal_input{
+	height: 18px;
+	width: 128px;
+	padding: 0 5px;
+	line-height: 18px;
+	border: 1px solid #c9c9c9;
+}
+#modal_btn_add{
+	width: 30px;
+	height: 22px;
+	padding: 0;
+	border: 1px solid #c9c9c9;
+	color: #000202;
+	text-align: center;
+	font-size: 12px;
+	line-height: 22px;
+	outline: none;
+}
+.ltc_btngroup_double > button{
+	width: 40px;
+	height: 22px;
+	padding: 0;
+	margin: 16px 25px 0;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: 1px solid #00c9c7;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none;
+ }
+.confirm{
+	background-color: #00c9c7;
+	color: #fff;
+}
+.confirm:hover{
+	background-color: #0d959b;
+	border-color: #0d959b;
+}
+.prompt{
+	position: absolute;
+	top: 58px;
+	left: 22px;
+	z-index: 1005;
+	width: 210px;
+	height: 50px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: rgba(0,0,0,0.6);
+	color: #fff;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+	display: none;
+}
+#p_haveCollected{
+	position: fixed;
+	top: 40%;
+	left: 44.5%;
+}
+
+.flowLists_box{
+	height: 310px;
+	margin-top: 84px;
+	padding: 0 33px;
+}
+.flowLists{
+	float: left;
+	width: 214px;
+}
+.flowLists_pic{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background: #84939a url(/Content/images/icon/spirit_claimWorks.png) no-repeat;
+}
+.fp_1{background-position: 42px 25px;}
+.fp_2{background-position: 42px -134px;}
+.fp_3{background-position: 42px -294px;}
+.fp_4{background-position: 42px -454px;}
+
+.flowLists_text{
+	margin-top: 8px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 26px;
+	color: #423e33;
+}
+.flowLists_note{
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: #8d8d8b;
+}
+.ltc_btngroup_double_c{
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	text-align: center;
+}
+.ltc_btngroup_double_c > button{
+	width: 116px;
+	height: 40px;
+	margin: 0 57px;
+	padding: 0;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #00c9c7;
+	border: 0;
+	outline: none;
+	color: #fff;
+	font-size: 22px;
+	font-family: "Microsoft YaHei";
+	cursor: pointer;
+}
+.ltc_btngroup_double_c > button:hover{
+	background-color: #0d959b;
+}
+
+
+/*******IE8,9hack*******************************/
+/*******仅IE8生效******/
+@media \0screen {
+	/*****451行****/
+	.prompt{
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+	}
+}
+/*******IE8,9hack END****************************/
+
+/******2级导航*******/
+.navBar2{width: 1200px;height: 80px;margin: 0 auto;font-size: 14px;}
+.nav_logo{padding: 16px 0 8px !important;}
+.c-sub-nav_li > a.active{border-bottom-color: #f43700;}
+#search_box{float: right;height: 40px;margin-top: 0px;padding-top: 20px;background-color: transparent;background: unset;}
+.nav{height: 122px;}
+/******2级导航 END******/
+
+/*******新增******/
+.welcome-wb{display: block;width: 1200px;height: 100px;margin: 0 auto 20px;}

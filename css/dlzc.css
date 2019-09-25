@@ -1,0 +1,871 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    min-width: 1200px;
+    padding-left: 0;
+    padding-right: 0px;
+
+}
+.over{
+	background: rgb(210,220,222);
+	width: 100%;
+    min-height: 100%;
+    min-width: 1200px;
+	background-image: url(../imgs/lyj01.jpg);
+	background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+}
+.one{
+	height: 60px;
+	width: 100%;
+	background-color:black;
+    font-size: 18px;
+}
+.two{
+	margin: 0 auto 0 auto;
+	height: 835px;
+	width: 100%;
+    min-height: 835px;
+    position: relative;
+    z-index: 8;
+}
+.two1{
+    position: absolute;
+    box-sizing: border-box;
+    width: 480px;
+    height: 600px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-left: -240px;
+    margin-top: -300px;
+}
+.hh1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 52px;
+    text-align:center;
+}
+.box1{
+    width: 340px;
+    height: 50px;
+    margin: 0 auto 28px auto;
+    border-bottom: 1px solid #C9C9C9;
+}
+.zh{
+    
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: -2px;
+    text-align: center;
+    font-size: 16px;
+    color:#F2264C;
+    font-weight: 600;
+    border-bottom: 2px solid #F2264C;
+}
+.dx{
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: -2px;
+    text-align: center;
+    font-size: 16px;
+    color: #393939;
+    font-weight: 600;
+    float: right;
+}
+.one1{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+.aone{
+    float: left;
+    display: block;
+    height: 60px;
+    line-height: 68px;
+    margin-right: 40px;
+    width: 160px;
+}
+.uls{
+    float: left;
+    height: 60px;
+}
+.lione{
+    position: relative;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 13px;
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+.lione>a{
+    color: #fff;
+    text-decoration:none;
+}
+.litwo{
+    position: relative;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 13px;
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+.litwo>a{
+    color: #fff;
+    text-decoration:none;
+}
+.lithree{
+    position: relative;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 13px;
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+.lithree>a{
+    color: #fff;
+    text-decoration:none;
+}
+.one2{
+    margin-left: 24px;
+    text-align: right;
+    height: 60px;
+    width: 102px;
+    float: right;
+    margin: 0px 65px 0px 24px;
+    line-height: 60px;
+}
+.s1{
+    height: 24px;
+    width: 41.33px;
+    color:#fff;
+    font-size: 18px;
+    font-weight:normal;
+    cursor: pointer;
+}
+.s2{
+    height: 24px;
+    width: 41.33px;
+    color:#fff;
+    font-size: 18px;
+    font-weight:normal;
+    cursor: pointer;
+}
+.line{
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: #fff;
+    margin-bottom: -2px;
+}
+.one3{
+    float: right;
+    margin-top:18px;
+    height: 42px;
+    width: 35px;
+    position: relative;
+    display:none;
+}
+.one4{
+    float: left;
+    right: 320px;
+    width: 98px;
+    height: 40px;
+    line-height: 24px;
+    color: #fff;
+    position: absolute;
+    
+}
+.one4 >.line{
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+.p1{
+    padding-left: 10px;
+    float: left;
+    font-size: 16px;
+}
+.p2{
+    position: absolute;
+    font-size: 16px;
+    line-height: 1px;
+    margin-top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 14px;
+    overflow: hidden;
+    text-align: center;
+}
+.one5{
+    position: absolute;
+    right: 35px;
+    width: 270px;
+    height: 28px;
+}
+.input1{
+    width: 270px;
+    height: 24px;
+    border: none;
+    background-color:black;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 2px solid #cfcfcf;
+    outline:none;//取消光晕效果
+}
+.one6{
+    position: absolute;
+    right:0px;
+    width: 35px;
+    height: 28px;
+}
+.s3{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    padding-top: 2px;
+    background: url(../imgs/lyj04.png) no-repeat 0px 0px;
+    border-bottom: 2px solid #cfcfcf;
+    cursor: pointer;
+}
+.one6 >.line{
+    float: left;
+    margin-top: 4px;
+}
+.one7{
+    float: right;
+    position: relative;
+    right: 234px;
+    width: 35px;
+    height: 42px;
+    margin: 18px 0 0;
+    overflow: hidden;
+}
+.s4{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    padding-top: 2px;
+    background: url(../imgs/lyj04.png) no-repeat 0px 0px;
+    cursor: pointer;
+}
+.one7 >.line{
+    float: left;
+    margin-top: 4px;
+}
+.uls1{
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    width: 98px;
+    border: 1px solid #ccc;
+    border-top: 3px solid #f43700;
+    background-color: #fff;
+    overflow: hidden;
+}
+.uls1 >li{
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #080810;
+    text-align: center;
+    cursor: pointer;
+
+}
+.uls1 >li:hover{
+    background:black;
+    color:white;
+}
+
+
+
+
+
+.box2{
+    width: 340px;
+    height: 268px;
+    margin: 0 auto;
+}
+.two2{
+    position: relative;
+    width: 340px;
+    height: 46px;
+    margin-bottom: 20px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px;
+}
+.two3{
+    position: relative;
+    width: 340px;
+    height: 46px;
+    margin-bottom: 20px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px;
+}
+.box2 >.two4{
+    height: 21px;
+    width: 340px;
+    margin-top: -10px;
+    margin-bottom: 6px;
+}
+.box2 >.two5{
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color:red;
+}
+.input2{
+    cursor: default;
+    background-color: rgb(221, 221, 221);
+    border-color: rgb(221, 221, 221);
+    display: block;
+    width: 340px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.two6{
+    text-align: center;
+}
+.box3{
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.sp1{
+    display: inline-block;
+    position: relative;
+    z-index: 12;
+    padding: 0 10px;
+    color: #808080;
+    background-color: #fff;
+}
+.sp2{
+    width: 340px;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -170px;
+    z-index: 11;
+    background-color: #E7E7E7;
+}
+.two8{
+    margin-top: 20px;
+}
+.sp3{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: -120px -1px;
+    cursor: pointer;
+}
+.sp4{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: -178px -1px;
+    cursor: pointer;
+}
+.sp5{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: -238px -1px;
+    cursor: pointer;
+}
+.zc1{
+    text-decoration: none;
+    color: #F33054;
+    cursor: pointer;
+}
+.f1{
+    float: left;
+    color: #6E6E6E;
+}
+.input3{
+    position: relative;
+    top: 2px;
+}
+.pc1{
+    float: right;
+    color: #6E6E6E;
+    cursor: pointer;
+}
+.spa1{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 13px;
+    margin-top: 8px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: 4px 2px;
+
+}
+.input4{
+    font-size:16px;
+    border: none;
+    margin-left:10px;
+    margin-top:15px;
+    outline:none;
+}
+.spa2{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 13px;
+    margin-top: 8px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: 4px -32px;
+
+}
+.input5{
+    font-size:16px;
+    border: none;
+    margin-left:10px;
+    margin-top:15px;
+    outline:none;
+}
+
+.uls >li:hover{
+    background-color:#23222a;
+    color:red;
+}
+.bo1{
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #DAD9D9;
+    background-color: #fff;
+    display:none;
+}
+.di1{
+    height: 38px;
+    width: 700px;
+    margin:0 auto;
+}
+.di1>ul{
+    float: left;
+    left:445px;
+    display:none;
+}
+.di1>ul>li{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 13px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.two22{
+    position: relative;
+    width: 340px;
+    height: 46px;
+    margin-bottom: 20px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px;
+    display:none;
+}
+.two33{
+    position: relative;
+    width: 250px;
+    height: 46px;
+    margin-bottom: 20px;
+    border: 1px solid #C9C9C9;
+    display:none;
+}
+
+.spa11{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 13px;
+    margin-top: 8px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: -58px 1px;
+
+}
+.input44{
+    font-size:16px;
+    border: none;
+    margin-left:10px;
+    margin-top:15px;
+    outline:none;
+}
+.spa22{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 13px;
+    margin-top: 8px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: -58px -32px;
+
+}
+.input55{
+    width: 177px;
+    font-size:16px;
+    border: none;
+    margin-left:11px;
+    margin-top:15px;
+    outline:none;
+}
+.btn1{
+    position: absolute;
+    width: 100px;
+    height: 48px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    border: none;
+    background-color: #F2264C;
+    right: 67px;
+    top: 258px;
+    cursor: pointer;
+    outline: none;
+    display:none;
+    border-radius: 3px;
+}
+
+
+
+.three1{
+    position: absolute;
+    box-sizing: border-box;
+    width: 480px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-left: -240px;
+    height: 710px;
+    margin-top: -355px;
+    display:none;
+}
+.gr{
+    
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: -2px;
+    text-align: center;
+    font-size: 16px;
+    color:#F2264C;
+    font-weight: 600;
+    border-bottom: 2px solid #F2264C;
+}
+.jg{
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: -2px;
+    text-align: center;
+    font-size: 16px;
+    color: #393939;
+    font-weight: 600;
+    float: right;
+}
+.bb1{
+    width: 340px;
+    margin: 0 auto;
+}
+.bx1{
+    height: 40px;
+    margin-bottom: 14px;
+    position: relative;
+    width: 340px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px
+}
+.bx2{
+    height: 40px;
+    margin-bottom: 14px;
+    position: relative;
+    width: 340px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px
+}
+.bx3{
+    height: 40px;
+    margin-bottom: 14px;
+    position: relative;
+    width: 340px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px
+}
+.bx4{
+    height: 40px;
+    margin-bottom: 14px;
+    position: relative;
+    width: 340px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px
+}
+.spa31{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 12px;
+    margin-top: 6px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: -58px 1px;
+
+}
+.inut1{
+    font-size:16px;
+    border: none;
+    margin-left:5px;
+    margin-top:13px;
+    outline:none;
+}
+.spa32{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 12px;
+    margin-top: 6px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: 4px -32px;
+
+}
+.inut2{
+    font-size:16px;
+    border: none;
+    margin-left:5px;
+    margin-top:13px;
+    outline:none;
+}
+.spa321{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 50px;
+    margin-top: 6px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position:-85px -31px;
+    cursor: pointer;
+}
+.spa322{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 12px;
+    margin-top: 6px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position:-28px -31px;
+    display:none;
+    cursor: pointer;
+}
+.inut3{
+    width: 163px;
+    font-size:16px;
+    border: none;
+    margin-left:5px;
+    margin-top:13px;
+    outline:none;
+}
+.spa33{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 12px;
+    margin-top: 6px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: -84px 1px;
+}
+.spa331{
+    float: right;
+    height: 40px;
+    width: 100px;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+}
+.inut4{
+    width: 163px;
+    font-size:16px;
+    border: none;
+    margin-left:5px;
+    margin-top:13px;
+    outline:none;
+}
+.spa34{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: 12px;
+    margin-top: 6px;
+    vertical-align: top;
+    background: url(../imgs/lyj05.png) no-repeat;
+    background-position: -58px -32px;;
+
+}
+.btn2{
+    float: right;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    border: none;
+    background-color: #F2264C;
+    right: 67px;
+    top: 258px;
+    cursor: pointer;
+    outline: none;
+
+}
+.lab11{
+    cursor: default;
+    text-align: left;
+    font-size: 13px;
+}
+.in1{
+    position: relative;
+    top: 2px;
+}
+
+.spp2{
+    text-align: left;
+    font-size: 13px;
+    color: #6BAFFF;
+    cursor: pointer;
+}
+.spp3{
+    text-align: left;
+    font-size: 13px;
+    color: #6BAFFF;
+    cursor: pointer;
+}
+.bx6{
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    color: #F2264C;
+}
+.spa36{
+    color: #F2264C;
+    font-size: 12px;
+    line-height: 36px;
+}
+.inut6{
+    display: block;
+    width: 340px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: #C9C9C9;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bx7{
+    text-align: center;
+}
+.spn2{
+    text-decoration: none;
+    color: #F33054;
+    cursor: pointer;
+}
+.bx8{
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.ssp1{
+    display: inline-block;
+    position: relative;
+    z-index: 12;
+    padding: 0 10px;
+    color: #808080;
+    background-color: #fff;
+}
+.ssp2{
+    width: 340px;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -170px;
+    z-index: 11;
+    background-color: #E7E7E7;
+}
+.bx9{
+    margin-top: 20px;
+    text-align: center;
+}
+.bx9 >span{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
+    cursor: pointer;
+}

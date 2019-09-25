@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>网页导航</title>
+        <link rel="stylesheet" href="../css/wzdh.css">
+        <link rel="stylesheet" href="../css/s-nav-fixed.css">
+        <link rel="stylesheet" href="../font/iconfont.css">
+        <script src="../js/jquery-3.4.1.js"></script>
+        <script src="../css/nav-fixed.js"></script>
+
+        <script>
+            $(function(){
+                $('.li31').click(function(event) {
+                    $("li").removeAttr('id');
+                    $(".li31").attr("id","li31");
+                    $('.inpt31').attr('placeholder','百度一下')
+                });
+                $('.li32').click(function(event) {
+                    $("li").removeAttr('id');
+                    $(".li32").attr("id","li31");
+                    $('.inpt31').attr('placeholder','Google search')
+                });
+                $('.li33').click(function(event) {
+                    $("li").removeAttr('id');
+                    $(".li33").attr("id","li31");
+                    $('.inpt31').attr('placeholder','Dribbble search')
+                });
+                $('.li34').click(function(event) {
+                    $("li").removeAttr('id');
+                    $(".li34").attr("id","li31");
+                    $('.inpt31').attr('placeholder','Behance search')
+                });
+                $('.li35').click(function(event) {
+                    $("li").removeAttr('id');
+                    $(".li35").attr("id","li31");
+                    $('.inpt31').attr('placeholder','icon search')
+                });
+                $('.li36').click(function(event) {
+                    $("li").removeAttr('id');
+                    $(".li36").attr("id","li31");
+                    $('.inpt31').attr('placeholder','搜索 花瓣网')
+                });
+                $('.li37').click(function(event) {
+                    $("li").removeAttr('id');
+                    $(".li37").attr("id","li31");
+                    $('.inpt31').attr('placeholder','搜索 Printerest')
+                });
+
+                $(window).scroll(function(event) {
+                    if($(this).scrollTop()>100){
+                        $('.bxli4').css('display', 'block');
+                    }else{
+                        $('.bxli4').css('display', 'none');
+                    }
+                });
+                $('.bxli4').click(function(event) {
+                    $('html,body').animate({
+                        'scrollTop':'0px'
+                    },200)
+                });
+                $('.bxli1').click(function(event) {
+                    alert("设为主页成功")
+                });
+                $('.bxli2').click(function(event) {
+                    alert("收藏成功")
+                });
+                $('.bxli3').click(function(event) {
+                    alert("收录申请成功")
+                });
+
+            })
+        </script>
+    </head>
+    <body>
+    	<!-- 头部导航栏 -->
+        <div id="l-main-nav-box">           
+            <div class="l-main-nav">
+                <div class="nav-logo">
+                    <img src="../imgs/lyj03.png" alt="">
+                </div>
+                <div class="nav-relo">
+                    <a href="html/登录注册.html" class="nav-login">登录</a>
+                    <a href="html/登录注册.html" class="nav-register">注册</a>
+                </div>
+            </div>      
+        </div>    
+        <!-- 漂浮导航栏 -->
+        <div id="l-main-nav-box-fixed" class="l-main-nav-box-fixed">            
+            <div class="l-main-nav">
+                <div class="nav-logo-fixed">
+                    <img src="../imgs/lyj03.png" alt="">
+                </div>
+                <ul class="main-nav-uls">
+                    <li ><a href="../index.html">首页</a></li>
+                    <li><span class="small-triangle"></span><a href="资讯.html">资讯</a></li>
+                    <li><span class="small-triangle"></span><a href="作品.html">作品</a></li>
+                    <li><span class="small-triangle"></span><a href="字体.html">字体</a></li>
+                    <li><span class="small-triangle"></span><a href="文章.html">文章</a></li>
+                    <li ><a href="#">赛事</a></li>
+                    <li><span class="small-triangle"></span><a href="人才网.html">人才网</a></li>
+                    <li><span class="small-triangle "></span><a href="yipinghui.html">意品汇</a></li>
+                    <li><a href="#">设计交易</a></li>
+                    <li class="nav-uls-click"><a href="网址导航.html">网址导航</a></li>
+                </ul>
+                <div class="nav-relo-fixed">
+                    
+                    <p class="fixed-line"></p>
+                    <div class="nav-relo-fixed">
+                        <a href="登录注册.html" class="nav-login">登录</a>
+                        <a href="登录注册.html" class="nav-register">注册</a>
+                    </div>                  
+                </div>
+                <div class="search-hiden">
+                    <div class="search-hiden-left sb_select">
+                        <span class="line" style='float:left'></span>
+                        <div class="select-hiden"><p>作品</p>
+                            <div class="selects-more" style='display: none;'>
+                                <ul class="selects-more-ul">
+                                    <li>作品</li>
+                                    <li>设计师</li>
+                                    <li>字体</li>
+                                    <li>文章</li>
+                                    <li>资讯</li>
+                                    <li>赛事</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-xiala">◇</div>
+                        <span class="line" style='float:right'></span>
+                    </div>
+                    <div class="sb_inputBox sb_bottomLine">
+                        <input type="text" class="c-keywords sbi_inp" placeholder="请输入关键词">
+                    </div>
+                    <div class="nav-fixed-research-box">
+                        <span class="nav-fixed-research"></span>
+                    </div>
+                </div>
+                <div class="nav-fixed-research-box research-box1 ">
+                    <span class="nav-fixed-research"></span>
+                </div>
+            </div>  
+            <div class="hide-nav-main-box navh-none" id="navh-shouye">
+                <div class="hide-nav-heart">
+                    
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">国内资讯</a></li>
+                        <li><a href="#">国际咨询</a></li>
+                        <li><a href="#">活动展览</a></li>
+                        <li><a href="#">人物访谈</a></li>
+                        <li><a href="#">行业聚焦</a></li>
+                        <li><a href="#">原创推荐</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">平面</a></li>
+                        <li><a href="#">包装</a></li>
+                        <li><a href="#">室内</a></li>
+                        <li><a href="#">工业</a></li>
+                        <li><a href="#">网页</a></li>
+                        <li><a href="#">插画</a></li>
+                        <li><a href="#">艺术</a></li>
+                        <li><a href="#">摄影</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">字体</a></li>
+                        <li><a href="#">灵感</a></li>
+                        <li><a href="#">原创</a></li>
+                        <li><a href="#">字体下载</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">观点/经验</a></li>
+                        <li><a href="#">教程</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box navh-none">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul hnav-ul-none">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">人才招聘</a></li>
+                        <li><a href="#">职业</a></li>
+                        <li><a href="#">人才</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box " id="now-click-hnav">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">意品汇</a></li>
+                        <li><a href="#">个人饰品</a></li>
+                        <li><a href="#">家居</a></li>
+                        <li><a href="#">数码</a></li>
+                        <li><a href="#">户外</a></li>
+                        <li><a href="#">运动</a></li>
+                        <li><a href="#">其他</a></li>
+                        <li><a href="#">+</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box navh-none">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul hnav-ul-none">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box navh-none">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul hnav-ul-none">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <div class="two">
+         <!-- main头部选择栏 -->
+            <div class="l-main">
+                <div class="l-main-chose">
+                        <div class="l-chose-left">
+                            <ul class="l-chose-left-uls">
+                                <li class=""><a href="../index.html"><p>首页</p></a>
+                                <div class="l-clicked-hind " >
+                                    <ul class="l-clicked-hind-ul">
+                                        
+                                    </ul>
+                                </div></li>
+                                <li>
+                                    <a href="资讯.html"><p>资讯</p></a>
+                                    <div class="l-clicked-hind" >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>国内资讯</li>
+                                            <li>国际资讯</li>
+                                            <li>活动展览</li>
+                                            <li>任务访谈</li>
+                                            <li>行内聚焦</li>
+                                            <li>原创推荐</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="作品.html"><p>作品</p></a>
+                                    <div class="l-clicked-hind" >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>平面</li>
+                                            <li>包装</li>
+                                            <li>室内</li>
+                                            <li>工业</li>
+                                            <li>页面</li>
+                                            <li>插画</li>
+                                            <li>艺术</li>
+                                            <li>摄影</li>
+                                            <li>其他</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="字体.html"><p>字体</p></a>
+                                    <div class="l-clicked-hind" >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>字体</li>
+                                            <li>灵感</li>
+                                            <li>原创</li>
+                                            <li>字体下载</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  >
+                                    <a href="文章.html"><p>文章</p></a>
+                                    <div class="l-clicked-hind"  >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>观点/经验</li>
+                                            <li>教程</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li ><a href="赛事.html"><p>赛事</p></a>
+                                <div class="l-clicked-hind " id="l-clicked-hind">
+                                    <ul class="l-clicked-hind-ul">
+                                        
+                                    </ul>
+                                </div></li>
+                                <li class="l-li-fat">
+                                    <a href="人才网.html"><p>人才网</p></a>
+                                    <div class="l-clicked-hind" >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>人才招聘</li>
+                                            <li>职位</li>
+                                            <li>人才</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="yipinghui.html"><p>意品汇</p></a>
+                                    <div class="l-clicked-hind"  >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>意品汇</li>
+                                            <li>个人饰品</li>
+                                            <li>家居</li>
+                                            <li>数码</li>
+                                            <li>户外</li>
+                                            <li>运动</li>
+                                            <li>其他</li>
+                                            <li>+</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"><p>设计交易</p></a>
+                                    <div class="l-clicked-hind " >
+                                    <ul class="l-clicked-hind-ul">
+                                        
+                                    </ul>
+                                </div>
+                                </li>
+                                <li  class="l-clicked">
+                                    <a href="网址导航.html"><p>网址导航</p></a>
+                                    <div class="l-clicked-hind " >
+                                    <ul class="l-clicked-hind-ul">
+                                        
+                                    </ul>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="l-chose-right">
+                            <div class="l-chose-rignt-le">
+                                <div class="l-selects">
+                                    <p>作品</p>
+                                    <div class="l-selects-more">
+                                        <ul class="l-selects-more-ul">
+                                            <li>作品</li>
+                                            <li>设计师</li>
+                                            <li>字体</li>
+                                            <li>文章</li>
+                                            <li>资讯</li>
+                                            <li>赛事</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <span class="iconfont icon-xiala- "></span>
+                                <span class=" iconfont icon-caozuo-shangla"></span>
+                            </div>
+                            <div class="l-chose-rignt-ri">
+                                <input type="text" placeholder="请输入关键词" class="l-chose-input">
+                                <span class="l-chose-search"></span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="three">
+            <div class="bx0">
+                <ul>
+                    <li class="bxli1">
+                        <p class="bxp1"></p>
+                    </li>
+                    <li class="bxli2">
+                        <p class="bxp2"></p>
+                    </li>
+                    <li class="bxli3">
+                        <p class="bxp3"></p>
+                    </li>
+                    <li class="bxli4">
+                        <p class="bxp4"></p>
+                    </li>
+                </ul>
+            </div>
+
+
+        	<div class="three1">
+                <ul class="uls31">
+                    <li class="li31" id="li31">百度</li>
+                    <li class="li32">Google</li>
+                    <li class="li33">Dribbble</li>
+                    <li class="li34">Bahance</li>
+                    <li class="li35">Icon</li>
+                    <li class="li36">花瓣</li>
+                    <li class="li37">Pinterest</li>
+                </ul>
+                <div class="three31">
+                    <input type="text" class="inpt31" placeholder="百度一下">
+                    <div class=div31>搜索</div>
+                </div> 
+            </div>
+
+            <div class="three2">
+                <div class="three21">
+                    <p>CDN设计网</p>
+                    <p>大圣创易</p>
+                    <p>包联网</p>
+                    <p>红动中国</p>
+                    <p>视觉中国</p>
+                    <p>ABBS建筑设计</p>
+                    <p>筑龙网</p>
+                    <p>中国服装网</p>
+                    <p>蜂鸟网</p>
+                    <p>POCO摄影网</p>
+                    <p>摄影无忌</p>
+                    <p>美空网</p>
+                    <p>昵图网</p>
+                    <p>我图网</p>
+                    <p>酷站</p>
+                    <p>千图网</p>
+                    <p>字体设计网</p>
+                    <p>稿定设计</p>
+                    <p class='p31'></p>
+                </div>
+            </div>
+            <div class="three3">
+                <ul class="uls331">
+                    <li class="li331">
+                        <p>综合设计</p>
+                        <div class="dp1">
+                            <p class="p0">
+                                Behance
+                                <br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="li331">
+                        <p>平面设计</p>
+                        <div class="dp1">
+                            <p class="p0">
+                                Behance
+                                <br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="li331">
+                        <p>网页设计</p>
+                        <div class="dp1">
+                            <p class="p0">
+                                Behance
+                                <br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="li331">
+                        <p>UI设计</p>
+                        <div class="dp1">
+                            <p class="p0">
+                                Behance
+                                <br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="li331" id="li3333">
+                        <p>字体设计</p>
+                        <div class="dp1">
+                            <p class="p0">
+                                Behance
+                                <br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                            <p class="p0">
+                                Behance<br>
+                                <span>世界排名：500</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="div30">
+                   <div class="div311">
+                       <p class="pd1">常用站点</p>
+                       <ul class="ulso">
+                            <li><p>百度</p></li>
+                            <li><p>网页</p></li>
+                            <li><p>网游</p></li>
+                            <li><p>网易</p></li>
+                            <li><p>淘宝</p></li>
+                            <li><p>腾讯</p></li>
+                            <li><p>拼夕夕</p></li>
+                            <li><p>京东</p></li>
+                            <li><p>阿里巴巴</p></li>
+                            <li><p>哔哩哔哩</p></li>
+                            <li><p>4399</p></li>
+                       </ul>
+                   </div>
+                   <div class="div312">
+                       <p class="pd1">添加站点</p>
+                       <ul class="ulso">
+                            <li><p>百度</p></li>
+                            <li><p>网页</p></li>
+                            <li><p>网游</p></li>
+                            <li><p>网易</p></li>
+                            <li><p>淘宝</p></li>
+                            <li><p>腾讯</p></li>
+                            <li><p>拼夕夕</p></li>
+                            <li><p>京东</p></li>
+                            <li><p>阿里巴巴</p></li>
+                            <li><p>哔哩哔哩</p></li>
+                            <li><p>4399</p></li>
+                       </ul>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        
+
+
+
+    	<!-- 最底部 -->
+    	<footer class="l-main-footer">
+			<div class="l-footer-heart">
+				<div class="l-endlist-box">
+					<div class="l-end-about l-end">
+					<h3 class="l-end-title">关于</h3>
+					<ul>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">版权声明</a></li>
+						<li><a href="#">关于隐私</a></li>
+						<li><a href="#">设计币</a></li>
+					</ul>
+				</div>
+				<div class="l-end-help l-end">
+					<h3 class="l-end-title">帮助</h3>
+					<ul>
+						<li><a href="#">审核标准</a></li>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">意见反馈</a></li>
+					</ul>
+				</div>
+				<div class="l-end-official l-end">
+					<h3 class="l-end-title">官方微信</h3>
+					<div class="l-end-erweima">
+						<img src="../imgs/lyj09.jpg" alt="">
+					</div>
+				</div>
+				<div class="l-end-connect l-end">
+					<h3 class="l-end-title">联系我们</h3>
+					<div class="l-end-qq"></div>
+					<ul>
+						<li><a href="#">QQ：</a></li>
+						<li><a href="#">
+                     		   电话：0371-86068866
+                    		</a></li>
+						<li><a href="#">
+                    投稿：cndesign@163.com
+                </a></li>
+						<li><a href="#">
+                    地址：郑州市国家大学科技园东区9号楼2层
+                </a></li>
+					</ul>
+				</div>
+				<div class="l-end-copyright l-end">
+					<h3 class="l-end-title">版权信息</h3>
+					<ul>
+						<li><p>                        CND设计网（CNDESIGN）会员所发布展示的 “原创作品/文章” 版权归原作者所有，任何商业用途均需联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。
+						<br><br>
+
+                        Copyright ?2006-2019 CND设计网
+                    
+						</p></li>
+						
+					</ul>
+				</div>
+				</div>
+				
+				<div class="l-final">
+					<p class="final-end">
+						<a href="#" class="moble-link-a"><span class="moble-link"></span><span class="need">移动 Android 版</span></a>
+						<a href="#"><span class="need">豫 ICP 备16038122号-2</span></a>
+						<a href="#" class="final-end-img-a"><span class="final-end-img"></span><span class="need"> &nbsp; &nbsp;&nbsp;豫公网安备 41019702002261号</span></a>
+					</p>
+				</div>
+			</div>
+		</footer> 
+    </body>
+</html>

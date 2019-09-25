@@ -1,0 +1,144 @@
+body{
+	min-width: 1200px;
+	padding-left: 0;
+	padding-right: 0px;
+
+}
+.l-main-footer{
+	height: 340px;
+	background:black;
+	width: 100%;
+	position: relative;
+}
+.l-footer-heart{
+	width: 1200px;
+	margin:0 auto;
+	height: 100%;
+	
+}
+.l-endlist-box{
+	overflow:hidden;
+}
+.l-end{
+	width: 190px;
+	height: 200px;
+	margin-top:66px;
+	float:left;
+}
+.l-end-title{
+	height: 30px;
+    margin-bottom: 40px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.l-end a{
+	font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+}
+.l-end>ul{
+	border-right:1px solid white;
+	list-style:none;
+}
+.l-end>ul>li{
+	line-height: 20px;
+	margin-bottom: 16px;
+	text-align:center;
+	font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+}
+.l-end-erweima{
+	text-align: center;
+    height: 130px;
+}
+.l-end-erweima>img{
+	width: 120px;
+    height: 120px;
+    padding-top: 5px;
+}
+.l-end-connect{
+	position:relative;
+	width: 280px;
+	margin-left:20px;
+	
+}
+.l-end-connect>ul>li{
+	text-align:left;
+	margin-bottom:10px;
+}
+.l-end-connect>ul{
+	padding:0px 20px;
+	box-sizing:border-box;
+}
+
+.l-end-qq{
+	width: 92px;
+	height: 22px;
+	background:url('../imgs/qq.png') no-repeat;
+	position:absolute;
+	top: 67px;
+    left: 55px;
+    cursor:pointer;
+}
+.l-end-erweima{
+	border-right:1px solid white;
+}
+.l-end-copyright{
+	width: 290px;
+	margin-left:40px;
+}
+.l-end-copyright>ul>li{
+	text-align:left;
+	font-size:12px;
+}
+.l-end-copyright>ul{
+	border-right:none;
+}
+
+.final-end{
+	margin: 0 auto; 
+	text-align:center;
+	margin-top: 30px; 
+	font-size: 16px;
+}
+.final-end>a{
+	color:white;
+	text-decoration:none;
+}
+.moble-link-a{
+	position:relative;
+}
+.moble-link-a:hover>.moble-link{
+	display:block;
+}
+.final-end .need{
+	margin-right:25px;
+}
+.moble-link{
+	position: absolute;
+    background: url('../imgs/mobile-android-link.png') no-repeat;
+    width: 122px;
+    height: 131px;
+    bottom: 20px;
+    left:0px;
+    display: none;
+}
+.final-end-img-a{
+	position:relative;
+}
+.final-end-img{
+	width: 20px;
+	height: 20px;
+	background:url(../imgs/batb.png) no-repeat;
+	position:absolute;
+	bottom:0px;
+	left:-3px;
+}

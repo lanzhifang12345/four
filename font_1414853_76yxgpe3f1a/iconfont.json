@@ -1,0 +1,44 @@
+{
+  "id": "1414853",
+  "name": "CND项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1089343",
+      "name": "评论",
+      "font_class": "buoumaotubiao48",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "1272080",
+      "name": "操作-上拉",
+      "font_class": "caozuo-shangla",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "3427871",
+      "name": "浏览量",
+      "font_class": "icon-",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "4657685",
+      "name": "下拉",
+      "font_class": "xiala-",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "9495500",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    }
+  ]
+}

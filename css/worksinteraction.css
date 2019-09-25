@@ -1,0 +1,462 @@
+﻿***********搜索框************/
+.search_box{
+	height: 103px;
+	padding-top: 50px;
+	background-color: #eff3f5;
+	text-align: center;
+}
+body{
+	min-width: 1200px;
+	padding-left: 0;
+	padding-right: 0px;
+
+}
+.search_totalNum{
+	margin: 0;
+	line-height: 40px;
+	color: #423e33;
+	font-size: 34px;
+}
+.search_input_box{
+	position: relative;
+	border: 1px solid #fff;
+	width: 664px;
+	height: 45px;
+	margin: 16px auto 0;
+	padding: 0 50px 0 16px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background-color: #727475;
+	overflow: hidden;
+}
+
+
+#search_input{
+	width: 100%;
+	height: 45px;
+	border: 0;
+	padding: 0;
+	color: #000;
+	font-size: 16px;
+	background-color: transparent;	
+}
+.si_icon_box{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 48px;
+	height: 45px;
+	border-left: 1px solid #fff;
+	background: #10acb3 url(../images/spirit_icon.png) no-repeat 12px 6px;
+	cursor: pointer;
+}
+.si_icon_box:active{
+	background-color: #0d959b;
+}
+/************搜索框END************/
+
+/*******Select S*******/
+.sub_sel_contain {
+	display: inline-block;
+	position: relative;
+	margin: 0 30px;
+	text-align: center;
+	border-radius: 4px;
+}
+.sub_sel_contain>.news_tabs_a {
+	display: inline-block;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border: 1px solid #e70012;
+	background: #e70012;
+	color: #fff;
+	border-radius: 4px;
+}
+.sub_sel_contain>.news_tabs_a.pr {
+	box-sizing: border-box;
+	width: 98px;
+	height: 36px;
+	line-height: 34px;
+	font-size: 14px;
+	padding-right: 8px
+}
+.c-sub_sel {
+	position: absolute;
+	z-index: 120;
+	background: #fff;
+	display: none;
+	border: 1px solid #e70012
+}
+.sub_sel_contain:hover>.c-sub_sel {
+	display: block
+}
+.sub_li_a>a, .sub_li_b>a {
+	display: inline-block;
+	width: 96px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #e70012
+}
+.sub_li_a>a:hover, .sub_li_b>a:hover {
+	color: #fff;
+	background: #e70012
+}
+.sub_sel_contain>.arrow_down {
+	right: 16px;
+	top: 16px
+}
+.sub_sel_contain:hover>.arrow_down {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+.sub_sel_contain>.arrow_down>s {
+	color: #fff
+}
+/*******Select E*******/
+
+/************小编作品单选框***********/
+.selects_box{
+	/*width: 320px;*/
+	width: 474px;
+	height: 36px;
+	margin: 30px auto 0;
+}
+.selects_box_bottom_space{
+	margin-bottom: 32px;
+	overflow:hidden;
+}
+.sl_span{
+	margin: 0 30px;
+}
+.sl_span{
+	display: block;
+	float: left;
+	width: 96px;
+	height: 34px;
+	padding: 0;
+	font-size: 14px;
+	/*color: #080810;*/
+	color: #DE1F27;
+	line-height: 34px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*border: 1px solid #080810;*/
+	border: 1px solid #DE1F27;
+	cursor: pointer;
+	text-align: center;
+}
+.sl_span:hover{
+	/*background-color: #080810;*/
+	background-color: #DE1F27;
+	color: #fff;
+}
+.sl_input{
+	display: none;
+}
+.select_lists > input:checked + .sl_span{
+	/*background-color: #080810;*/
+	background-color: #DE1F27;
+	color: #fff;
+}
+.sl_span_selected{
+	/*background-color: #080810;*/
+	background-color: #DE1F27;
+	color: #fff;
+}
+.search_result{
+	width: 308px;
+	height: 20px;
+	padding: 28px 0 50px;
+	line-height: 18px;
+	font-size: 14px;
+	margin: 0 auto;
+	color: #423e33;
+}
+.iconBox{
+	float: left;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	background-image: url(../images/spirit_icon.png);
+	overflow: hidden;
+}
+.icon_guanzhu{background-position: -5px -142px;}
+.keywords,
+.sr_total{
+	color: #ff7878;
+}
+/************小编作品单选框 END***********/
+
+.upload_but {
+    display: block;
+    width: 78px;
+    height: 26px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background-color: #F43700;
+    border: 1px solid #F43700;
+    transition: all 400ms;
+}
+
+/*********小编作品列表*********/
+.production_box{
+}
+.production_box_for_Interaction{
+	width: 1220px;
+}
+.production_lists_box{
+	float: left;
+	width: 224px;
+	height: 288px;
+	margin-right: 20px;
+	margin-bottom: 42px;
+	background: #fff;
+	transition: all 400ms;
+}
+.production_lists_box:hover{
+	background-color: #fefefe;
+	border-color: #d2d2d2;
+}
+.production_lists_box:hover .prod_hots{
+	border-color: #d2d2d2;
+}
+.pl_img_box{
+	width: 224px;
+	height: 166px;
+	/*overflow: hidden;*/
+}
+.pl_img_box > a {
+	height: 166px;
+}
+.pl_img{
+	width: 224px;
+	height: 166px;
+}
+.production_lists_box > .pl_img_box > img {
+	width: 224px;
+	height: 166px;
+}
+.prod_info_box{
+	margin-top: 14px;
+}
+.pi_person_box{
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	overflow: hidden;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+.pi_person{
+	width: 34px;
+	height: 34px;
+}
+.pi_title{
+	width: 170px;
+	margin: 0;
+	margin-left: 12px;
+	line-height: 16px;
+	font-size: 14px;
+	color: #423e33;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.pi_name{
+	margin-top: 6px;
+	line-height: 14px;
+	font-size: 12px;
+	color: #707070;
+}
+.pi_title > a{color: #423e33;}
+.pi_title > a:hover{color: #F33855;}
+.pi_name {
+	display: inline-block;
+	max-width: 72px;
+	margin-top: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pi_name > a{color: #333333;}
+.pi_name > a:hover{text-decoration: underline;}
+.pi_bottom{
+	margin: 2px 0;
+	line-height: 14px;
+	font-size: 12px;
+}
+.original_info{
+	color: #00c9c7;
+}
+.prod_date{
+	margin-top: 15px;
+	margin-right: 10px;
+	color: #b2b1b1;
+	font-size: 12px;
+}
+.boxs{
+	position: relative;
+	z-index: 2;
+	padding-left: 14px;
+	height: 35px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.lists_box{
+	float: left;
+	color: #999;
+	font-size: 12px;
+	width: 70px;
+	margin-top: 8px;
+}
+.iconfont{
+	float: left;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	background-image: url(../images/spirit_icon.png);
+	overflow: hidden;
+}
+.icon_guanzhu{background-position: -5px -116px;}
+.icon_liulan{background-position: -2px -39px;}
+.icon_pinglun{background-position: -2px -62px;}
+.icon_zan{background-position: -2px -91px;margin-top:-2px;}
+/*********小编作品列表 END*********/
+
+/*********分页按钮*******/
+.paging_box{
+	height: 128px;
+	padding-top: 20px;
+}
+.paging_ul{
+	width: 716px;
+	height: 38px;
+	margin: 0 auto;
+	text-align: center;
+}
+.paging_lists{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 7px;
+}
+.paging_lists:last-child{
+	margin: 0;
+}
+.paging_a,
+.paging_span,
+.paging_input,
+.paging_a_big{
+	display: block;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #080810;
+	background-color: transparent;
+	text-align: center;
+	line-height: 36px;
+	font-size: 14px;
+	color: #080810;
+}
+.paging_a_selected{
+	color: #fff;
+	background-color: #080810;
+}
+.paging_a_big{
+	width: 64px;
+	cursor: default;
+}
+.paging_bg{
+	background-color: #080810;
+}
+.paging_a:hover{
+	color: #fff;
+	background-color: #080810;
+}
+.paging_bg:hover{
+	background-color: #080810;
+}
+
+.triangle_left,
+.triangle_right{
+	float: left;
+	width: 0;
+	height: 0;
+	margin: 13px 0 0 14px;
+	border-style: solid;
+}
+.triangle_left{
+	margin-left: 12px;
+	border-width: 6px 10.4px 6px 0;
+	border-color: transparent #fff transparent transparent;
+}
+.triangle_right{
+	border-width: 6px 0 6px 10.4px;
+	border-color: transparent transparent transparent #fff;
+}
+/*********分页按钮 END*******/
+
+.prompt_min{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 120px;
+	height: 26px;
+	line-height: 26px;
+	z-index: 1005;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: rgba(0,0,0,0.6);
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	display: none;
+}
+.jumpGO_triangle{
+	position: absolute;
+	top: -7px;
+	left: 15px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5px 7px 5px;
+	border-color: transparent transparent rgba(0,0,0,0.6) transparent;
+}
+
+/*******IE8,9hack*******************************/
+/*******仅IE8生效******/
+@media \0screen {
+	
+	/*****220行****/
+	.paging_ul{
+		width: 728px;
+	}
+	.prompt_min,
+	.jumpGO_triangle{
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+	}
+}
+/*******IE8,9hack END***************************

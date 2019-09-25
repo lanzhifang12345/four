@@ -1,0 +1,775 @@
+body {
+	background-color: #F4F4F4; 
+}
+body{
+	min-width: 1200px;
+	padding-left: 0;
+	padding-right: 0px;
+
+}
+.nav_logo{padding: 16px 0 12px;}
+
+/**********banner部分**********/
+.banner_box{
+	height: 268px;
+	background-color: #454545;
+	background-size: 100% 348px;
+}
+.searchBox{
+	height: 100%;
+	margin-top: 2px;
+}
+.search_box{
+	width: 690px;
+	padding-top: 54px;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	overflow: hidden;
+}
+.search_box .search_box_title {
+	text-align: center;
+	height: 39px;
+	line-height: 39px;
+	font-size: 39px;
+	font-weight: 500;
+	color: #fff;
+}
+.search_img{
+	display: block;
+	width: 220px;
+	margin: 52px auto 0;
+}
+.search_input_box{
+	position: relative;
+	height: 41px;
+	margin-top: 41px;
+	padding: 0 50px 0 16px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+
+#search_input{
+	width: 100%;
+	height: 38px;
+	border: 0;
+	padding: 0;
+	color: #000;
+	font-size: 16px;	
+	background-color: transparent;	
+}
+.si_icon_box{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 48px;
+	height: 41px;
+	background: #DE1F27 url(images/icon/spirit_icon.png) no-repeat 12px 4px;
+	cursor: pointer;
+}
+.si_icon_box:active{
+	background-color: #0d959b;
+}
+.search_box_subtitle {
+	text-align: center;
+	color: #fff;
+	margin-top: 14px;
+}
+/**********banner部分 END**********/
+
+/********** 赛事 Start ***********/
+.index_saishi {
+	margin-top: 42px;
+}
+.saishi_li {
+	width: 280px;
+	height: 206px;
+	margin-left: 26px;
+}
+.saishi_li img {
+	width: 280px;
+	height: 206px;
+}
+.saishi_li:first-child {
+	margin-left: 0;
+}
+/********** 赛事 End ***********/
+
+/**********热门推荐**********/ /* 待删除 */
+.recommend_box{
+	height: 722px;
+}
+.recommend_lists_box{
+	float: left;
+	position: relative;
+	width: 380px;
+	height: 280px;
+	padding: 9px;
+	margin-bottom: 30px;
+	border: 1px solid #fff;
+}
+.rl_tag{
+	position: absolute;
+	left: 9px;
+	top: 9px;
+	z-index: 5;
+	display: block;
+	width: 82px;
+	height: 82px;
+}
+.recommend_person > .rl_tag{
+	background: url(images/icon/spirit_labal.png) no-repeat -32px -155px;
+}
+.recommend_production > .rl_tag{
+	background: url(images/icon/spirit_labal.png) no-repeat -32px -276px;
+}
+.recommend_activities > .rl_tag{
+	background: url(images/icon/spirit_labal.png) no-repeat -32px -34px;
+}
+.rl_img_box{
+	position: relative;
+	width: 380px;
+	height: 280px;
+	overflow: hidden;
+}
+.rl_img{
+	width: 380px;
+	height: 280px;
+}
+.recommend_lists_box:hover{
+	border-color: #d2d2d2;
+}
+.rl_info{
+	position: absolute;
+	bottom: -46px;
+	width: 380px;
+	height: 46px;
+	background-color: rgba(0,0,0,0.44);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000)\9;
+	transition: all 400ms;
+	color: #fff;
+	line-height: 46px;
+}
+.recommend_lists_box:hover .rl_info{
+	bottom: 0px;
+}
+.rl_info_title{
+	float: left;
+	margin-left: 16px;
+	color: #fff;
+}
+.rl_info_author{
+	float: right;
+	margin-right: 30px;
+	color: #fff;
+}
+/**********热门推荐 END**********/
+
+/********主推作品 S******/
+.push_box_ul {
+	width: 1220px;
+	margin: -10px 0 32px 0;
+}
+.push_box_li {
+	width: 224px;
+	height: 288px;
+	margin-right: 20px;
+	margin-top: 44px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.works_cover_box {
+	display: block;
+	height: 166px;
+}
+.works_cover_box img {
+	width: 224px;
+	height: 166px;
+}
+.works_cover_box + a {
+	display: inline-block;
+}
+.push_box_li .work_title {
+	max-width: 190px;
+	margin-top: 8px;
+	padding-left: 12px;
+	color: #443D33;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.push_box_li .work_title:hover {
+	color: #F33855;
+}
+.author_info {
+	margin-top: 18px;
+}
+.author_head_box {
+	display: inline-block;
+	border-radius: 50%;
+	margin-top: -7px;
+	margin-left: 12px;
+}
+.author_head_box img {
+	/*margin-top: -8px;*/
+}
+.author_nickname {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-left: 6px;
+	font-size: 12px;
+	color: #323232;
+}
+.upload_time {
+	margin-right: 12px;
+	font-size: 11px;
+	color: #B1B1B1;
+}
+/********主推作品 E******/
+
+/*********优秀灵感 S*********/
+.inspiration_box {
+	margin-bottom: 42px;
+}
+.inspiration_ul {
+	width: 1230px;
+	margin-bottom: 32px;
+	margin-left: -30px;
+}
+.inspiration_li {
+	width: 216px;
+	height: 225px;
+	margin-top: 46px;
+	margin-left: 30px;
+	background: #fff;
+	overflow: hidden;
+}
+.inspiration_cover {
+	display: block;
+	height: 162px;
+}
+.inspiration_cover img {
+	width: 216px;
+	height: 160px;
+}
+.inspiration_cover + a {
+	display: inline-block;
+	margin-left: 12px;
+}
+.inspiration_li .works_title {
+	max-width: 190px;
+	margin-top: 4px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #413D32;
+}
+.inspiration_li .works_title:hover {
+	color: #F33855;
+}
+.inspiration_li .works_sort {
+	margin-left: 12px;
+	font-size: 12px;
+	color: #999;
+}
+.inspiration_li .collect_work {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 58px;
+	margin-right: 11px;
+	line-height: 20px;
+	border: 1px solid #ED1B24;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #ED1B24;
+	text-align: center;
+	transition: all .2s;
+	cursor: pointer;
+}
+.inspiration_li .collect_work:hover {
+	color: #fff;
+	background: #ED1B24;
+	transition: all .2s;
+}
+.inspi_bot {
+	margin-top: -4px;
+}
+/*********优秀灵感 E*********/
+
+/***********文章 S**********/
+.article_tabs a {
+	/*display: inline-block;*/
+	color: #8D8D8D;
+	margin-left: 18px;
+}
+.article_tabs a.active {
+	color: #ED1A23;
+}
+.articles_ul {
+	width: 1248px;
+	margin-bottom: 32px;
+	display: none;
+}
+.articles_ul.show {
+	display: block;
+}
+.article_li {
+	box-sizing: border-box;
+	padding: 10px;
+	margin-top: 40px;
+	margin-right: 48px;
+	width: 576px;
+	height: 152px;
+	background: #fff;
+	overflow: hidden;
+}
+.article_cover {
+	display: block;
+	height: 133px;
+}
+.article_cover img {
+	width: 260px;
+	height: 133px;	
+}
+.article_txt {
+	padding-left: 274px;
+}
+.article_txt h6 {
+	width: 264px;
+	color: #413D32;
+	font-size: 14px;
+	margin-top: 6px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.article_txt h6:hover {
+	color: #F33855;
+}
+.article_txt .sort {
+	display: inline-block;
+	height: 21px;
+	line-height: 21px;
+	padding: 0 6px;
+	margin-bottom: 8px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 3px;
+	background: #EE1B24;
+}
+.article_txt p {
+	width: 282px;
+	height: 54px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #ADADAD;
+	font-size: 12px;
+}
+/***********文章 E**********/
+
+/***********推荐设计师 S**********/
+.desinger_ul {
+	width: 1230px;
+	margin-top: -10px;
+	margin-bottom: 32px;
+}
+.desinger_li {
+	box-sizing: border-box;
+	width: 216px;
+	height: 78px;
+	margin-top: 40px;
+	margin-right: 30px;
+	padding-top: 8px;
+	padding-left: 8px;
+	border-radius: 4px;
+	background: #fff;
+	overflow: hidden;
+}
+.head_box {
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.head_box img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.desinger_li p {
+	padding-left: 80px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #9A9899;
+}
+.desinger_li .desinger_name {
+	display: block;
+	width: 126px;
+	margin-top: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #57585C;
+}
+/***********推荐设计师 E**********/
+
+/***********分类查询 S**********/
+.sort_selection_box {
+	box-sizing: border-box;
+	margin-top: 36px;
+	margin-bottom: 36px;
+}
+.sort_list {
+	box-sizing: border-box;
+	padding-left: 4px;
+}
+.sort_selection_link {
+	box-sizing: border-box;
+	display: block;
+	width: 150px;
+	height: 52px;
+	line-height: 52px;
+	margin-left: -1px;
+	margin-top: -1px;
+	text-align: center;
+	color: #535353;
+	border: 1px solid #BFBFBF;	
+	background: #fff;
+}
+.sort_selection_link:hover, .sort_selection_link.active {
+	color: #fff;
+	background: #ED1B24;
+	transition: all .2s;
+}
+/***********分类查询 E**********/
+
+/***********友情链接 S************/
+.friend_link {
+	margin-bottom: 42px;
+}
+.links_contain {
+	padding-top: 22px;
+	padding-bottom: 34px;
+	background: #fff;
+}
+.links_contain h2 {
+	margin-left: 14px;
+	margin-bottom: 12px;
+	color: #040404;
+	font-size: 14px;
+}
+.links_list {
+	margin-left: 28px;
+}
+.links_contain a {
+	display: inline-block;
+	padding: 0 12px;
+	line-height: 32px;
+	font-size: 14px;
+	color: #666;
+}
+.links_contain a:hover {
+	color: #EC1A25;
+	text-decoration: underline;
+}
+/***********友情链接 E************/
+
+/**********网友作品**********/
+/*.upload_box{*/
+	/*margin-bottom: 40px;*/
+/*}*/
+.upload_but{
+	display: block;
+	width: 78px;
+	height: 26px;
+	margin: 0 auto;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	line-height: 26px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	background-color: #F43700;
+	border: 1px solid #F43700;
+	transition: all 400ms;
+}
+.upload_but:hover{
+	background-color: transparent;
+	color: #F43700;
+}
+.lists_box{
+	width: 70px;
+}
+.author_head_box img {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
+.iconfont{
+	float: left;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-top: 4px;
+	margin-right: 6px;
+	background-image: url(images/icon/spirit_icon.png);
+	overflow: hidden;
+}
+.icon_guanzhu{background-position: -5px -116px;}
+.icon_liulan{background-position: -2px -39px;}
+.icon_pinglun{background-position: -2px -62px;}
+.icon_zan{background-position: -2px -91px;}
+
+.upload_box > p{
+	margin: 28px auto 0;
+	width: 350px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #292b29;
+	text-align: center;
+}
+.production_box{
+	height: 830px;
+	margin-top: 4px;
+}
+.production_lists_box{
+	float: left;
+	width: 280px;
+	height: 324px;
+	padding: 9px;
+	margin-bottom: 32px;
+	border: 1px solid #eff3f5;
+	transition: all 400ms;
+}
+.production_lists_box:hover{
+	background-color: #fefefe;
+	border-color: #d2d2d2;
+}
+.production_lists_box:hover .prod_hots{
+	border-color: #d2d2d2;
+}
+.pl_img_box{
+	width: 280px;
+	height: 208px;
+	overflow: hidden;
+}
+.pl_img{
+	height: 208px;
+}
+.prod_info_box{
+	margin-top: 14px;
+}
+.pi_person_box{
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin-right: 10px;
+	overflow: hidden;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+.pi_person{
+	width: 34px;
+	height: 34px;
+}
+.pi_title{
+	width: 236px;
+	margin: 0;
+	line-height: 16px;
+	font-size: 14px;
+	color: #423e33;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.pi_name{
+	margin-top: 6px;
+	line-height: 14px;
+	font-size: 12px;
+	color: #707070;
+}
+.pi_title > a{color: #423e33;}
+.pi_title > a:hover{color: #02b1b9;}
+.pi_name > a{color: #707070;}
+.pi_name > a:hover{text-decoration: underline;}
+.pi_bottom{
+	margin: 12px 0 0;
+	line-height: 14px;
+	font-size: 12px;
+}
+.original_info{
+	color: #00c9c7;
+}
+.prod_date{
+	margin-left: 10px;
+	color: #b2b1b1;
+}
+.boxs{
+	position: relative;
+	z-index: 2;
+	height: 29px;
+	padding-left: 12px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.lists_box{
+	float: left;
+	color: #999;
+	font-size: 12px;
+}
+
+/**********网友作品 END**********/
+
+/**********优秀设计师推荐**********/
+.designer_box{
+	height: 438px;
+}
+
+.designer_lists_box{
+	float: left;
+	width: 240px;
+}
+.des_img_box{
+	position: relative;
+	z-index: 2;
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	overflow: hidden;
+}
+.des_info{
+	position: absolute;
+	top: 130px;
+	width: 100%;
+	height: 100%;
+	padding-top: 40px;
+	background-color: rgba(0,0,0,0.66);
+	transition: all 400ms;
+}
+.di_infoList{
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	font-size: 12px;
+	line-height: 20px;
+}
+.des_img_box:hover .des_info{
+	top: 0;
+}
+
+.des_name,
+.des_position,
+.des_address{
+	text-align: center;
+}
+.des_name {
+	font-size: 16px;
+	line-height: 18px;
+	color: #04a9a7;
+	margin: 16px 0 18px;
+}
+.des_name > a{ color: #04a9a7; }
+.des_position,
+.des_address{
+	font-size: 14px;
+	color: #666;
+	margin: 8px 0 0;
+	line-height: 16px;
+}
+/**********优秀设计师推荐 END**********/
+
+/**********热门字体下载**********/
+.font_box{
+	height: 540px;
+}
+.font_lists_box{
+	float: left;
+	width: 280px;
+	height: 200px;
+	margin: 0 10px;
+	
+}
+.fl_img_box{
+	display: block;
+	height: 113px;
+	line-height: 180px;
+	text-align: center;
+}
+.fl_bgColor_zi{background-color: #cac7e4;}
+.fl_bgColor_lv{background-color: #c4e4e4;}
+.fl_bgColor_fen{background-color: #e8dfe8;}
+.fl_bgColor_qing{background-color: #dfe8e5;}
+.fl_title{
+	display: block;
+	margin: 20px 42px 0;
+	text-align: center;
+	font-size: 16px;
+	color: #423e33;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.fl_img_box:hover + .fl_title,
+.fl_title:hover{
+	color: #04a9a7;
+}
+
+
+/**********热门字体下载 END**********/
+
+
+/*******IE8,9hack*******************************/
+/*******仅IE8生效******/
+@media \0screen {
+	/********230+行**********/
+.ie8_search_img{
+	margin: 52px 0 0 18px;
+}
+.search_list_ul{
+}
+#search_input{
+	margin-top: 0px;
+	height: 38px;
+	line-height: 38px;
+}
+.searchBox{
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+}
+.search_box{
+	/*background-image: none;*/
+}
+	/********579行**********/
+.des_info{
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+}
+.des_img_box{
+	width: 110px;
+	height: 110px;
+	margin: 10px auto;
+	text-align: center;
+}
+.des_img{
+	width: 110px;
+}
+.des_info{
+	padding-top: 28px;
+}
+}
+/*******IE8,9hack END****************************/

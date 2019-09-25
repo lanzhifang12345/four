@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<title>赛事</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/ss.css">
+        <link rel="stylesheet" href="../css/s-nav-fixed.css">
+        <link rel="stylesheet" href="../font/iconfont.css">
+        <script src="../js/jquery-3.4.1.js"></script>
+        <script src="../css/nav-fixed.js"></script>
+
+        <script>
+        	$(function(){
+				$('.spa31').click(function(event) {
+					$('.spa31').css('background','#090810');
+					$('.spa31').css('color','#ffff');
+					$('.spa32').css('background','#ffff');
+					$('.spa32').css('color','#090810');
+					$('.spa33').css('background','#ffff');
+					$('.spa33').css('color','#090810');
+				});
+				$('.spa32').click(function(event) {
+					$('.spa31').css('background','#fff');
+					$('.spa31').css('color','#090810');
+					$('.spa32').css('background','#090810');
+					$('.spa32').css('color','#ffff');
+					$('.spa33').css('background','#ffff');
+					$('.spa33').css('color','#090810');
+				});
+				$('.spa33').click(function(event) {
+					$('.spa31').css('background','#fff');
+					$('.spa31').css('color','#090810');
+					$('.spa32').css('background','#ffff');
+					$('.spa32').css('color','#090810');
+					$('.spa33').css('background','#090810');
+					$('.spa33').css('color','#ffff');
+				});
+
+                $(window).scroll(function(event) {
+                    if($(this).scrollTop()>100){
+                        $('.ff').css('display', 'block');
+                    }else{
+                        $('.ff').css('display', 'none');
+                    }
+                });
+
+                $('.ff').click(function(event) {
+                    $('html,body').animate({
+                        'scrollTop':'0px'
+                    },200)
+                });
+
+        	})
+        </script>
+    </head>
+    <body>
+    	<!-- 头部导航栏 -->
+        <div id="l-main-nav-box">           
+            <div class="l-main-nav">
+                <div class="nav-logo">
+                    <img src="../imgs/lyj03.png" alt="">
+                </div>
+                <div class="nav-relo">
+                    <a href="html/登录注册.html" class="nav-login">登录</a>
+                    <a href="html/登录注册.html" class="nav-register">注册</a>
+                </div>
+            </div>      
+        </div>                              
+
+        <!-- 漂浮导航栏 -->
+        <div id="l-main-nav-box-fixed" class="l-main-nav-box-fixed">            
+            <div class="l-main-nav">
+                <div class="nav-logo-fixed">
+                    <img src="../imgs/lyj03.png" alt="">
+                </div>
+                <ul class="main-nav-uls">
+                    <li ><a href="../index.html">首页</a></li>
+                    <li><span class="small-triangle"></span><a href="资讯.html">资讯</a></li>
+                    <li><span class="small-triangle"></span><a href="作品.html">作品</a></li>
+                    <li><span class="small-triangle"></span><a href="字体.html">字体</a></li>
+                    <li><span class="small-triangle"></span><a href="文章.html">文章</a></li>
+                    <li class="nav-uls-click"><a href="赛事.html">赛事</a></li>
+                    <li><span class="small-triangle"></span><a href="人才网.html">人才网</a></li>
+                    <li><span class="small-triangle "></span><a href="yipinghui.html">意品汇</a></li>
+                    <li><a href="#">设计交易</a></li>
+                    <li><a href="网址导航.html">网址导航</a></li>
+                </ul>
+                <div class="nav-relo-fixed">
+                    
+                    <p class="fixed-line"></p>
+                    <div class="nav-relo-fixed">
+                        <a href="登录注册.html" class="nav-login">登录</a>
+                        <a href="登录注册.html" class="nav-register">注册</a>
+                    </div>                  
+                </div>
+                <div class="search-hiden">
+                    <div class="search-hiden-left sb_select">
+                        <span class="line" style='float:left'></span>
+                        <div class="select-hiden"><p>作品</p>
+                            <div class="selects-more" style='display: none;'>
+                                <ul class="selects-more-ul">
+                                    <li>作品</li>
+                                    <li>设计师</li>
+                                    <li>字体</li>
+                                    <li>文章</li>
+                                    <li>资讯</li>
+                                    <li>赛事</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-xiala">◇</div>
+                        <span class="line" style='float:right'></span>
+                    </div>
+                    <div class="sb_inputBox sb_bottomLine">
+                        <input type="text" class="c-keywords sbi_inp" placeholder="请输入关键词">
+                    </div>
+                    <div class="nav-fixed-research-box">
+                        <span class="nav-fixed-research"></span>
+                    </div>
+                </div>
+                <div class="nav-fixed-research-box research-box1 ">
+                    <span class="nav-fixed-research"></span>
+                </div>
+            </div>  
+            <div class="hide-nav-main-box navh-none" id="navh-shouye">
+                <div class="hide-nav-heart">
+                    
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">国内资讯</a></li>
+                        <li><a href="#">国际咨询</a></li>
+                        <li><a href="#">活动展览</a></li>
+                        <li><a href="#">人物访谈</a></li>
+                        <li><a href="#">行业聚焦</a></li>
+                        <li><a href="#">原创推荐</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">平面</a></li>
+                        <li><a href="#">包装</a></li>
+                        <li><a href="#">室内</a></li>
+                        <li><a href="#">工业</a></li>
+                        <li><a href="#">网页</a></li>
+                        <li><a href="#">插画</a></li>
+                        <li><a href="#">艺术</a></li>
+                        <li><a href="#">摄影</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">字体</a></li>
+                        <li><a href="#">灵感</a></li>
+                        <li><a href="#">原创</a></li>
+                        <li><a href="#">字体下载</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">观点/经验</a></li>
+                        <li><a href="#">教程</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box navh-none">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul hnav-ul-none">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">人才招聘</a></li>
+                        <li><a href="#">职业</a></li>
+                        <li><a href="#">人才</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box " id="now-click-hnav">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul">
+                        <li><a href="#">意品汇</a></li>
+                        <li><a href="#">个人饰品</a></li>
+                        <li><a href="#">家居</a></li>
+                        <li><a href="#">数码</a></li>
+                        <li><a href="#">户外</a></li>
+                        <li><a href="#">运动</a></li>
+                        <li><a href="#">其他</a></li>
+                        <li><a href="#">+</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box navh-none">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul hnav-ul-none">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="hide-nav-main-box navh-none">
+                <div class="hide-nav-heart">
+                    <ul class="hnav-ul hnav-ul-none">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    	
+        <div class="two">
+         <!-- main头部选择栏 -->
+            <div class="l-main">
+                <div class="l-main-chose">
+                        <div class="l-chose-left">
+                            <ul class="l-chose-left-uls">
+                                <li class=""><a href="../index.html"><p>首页</p></a>
+                                <div class="l-clicked-hind " >
+                                    <ul class="l-clicked-hind-ul">
+                                        
+                                    </ul>
+                                </div></li>
+                                <li>
+                                    <a href="资讯.html"><p>资讯</p></a>
+                                    <div class="l-clicked-hind" >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>国内资讯</li>
+                                            <li>国际资讯</li>
+                                            <li>活动展览</li>
+                                            <li>任务访谈</li>
+                                            <li>行内聚焦</li>
+                                            <li>原创推荐</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="作品.html"><p>作品</p></a>
+                                    <div class="l-clicked-hind" >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>平面</li>
+                                            <li>包装</li>
+                                            <li>室内</li>
+                                            <li>工业</li>
+                                            <li>页面</li>
+                                            <li>插画</li>
+                                            <li>艺术</li>
+                                            <li>摄影</li>
+                                            <li>其他</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="字体.html"><p>字体</p></a>
+                                    <div class="l-clicked-hind" >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>字体</li>
+                                            <li>灵感</li>
+                                            <li>原创</li>
+                                            <li>字体下载</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  >
+                                    <a href="文章.html"><p>文章</p></a>
+                                    <div class="l-clicked-hind"  >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>观点/经验</li>
+                                            <li>教程</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  class="l-clicked"><a href="赛事.html"><p>赛事</p></a>
+                                <div class="l-clicked-hind " id="l-clicked-hind">
+                                    <ul class="l-clicked-hind-ul">
+                                        
+                                    </ul>
+                                </div></li>
+                                <li class="l-li-fat">
+                                    <a href="人才网.html"><p>人才网</p></a>
+                                    <div class="l-clicked-hind" >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>人才招聘</li>
+                                            <li>职位</li>
+                                            <li>人才</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="yipinghui.html"><p>意品汇</p></a>
+                                    <div class="l-clicked-hind"  >
+                                        <ul class="l-clicked-hind-ul">
+                                            <li>意品汇</li>
+                                            <li>个人饰品</li>
+                                            <li>家居</li>
+                                            <li>数码</li>
+                                            <li>户外</li>
+                                            <li>运动</li>
+                                            <li>其他</li>
+                                            <li>+</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"><p>设计交易</p></a>
+                                    <div class="l-clicked-hind " >
+                                    <ul class="l-clicked-hind-ul">
+                                        
+                                    </ul>
+                                </div>
+                                </li>
+                                <li>
+                                    <a href="网址导航.html"><p>网址导航</p></a>
+                                    <div class="l-clicked-hind " >
+                                    <ul class="l-clicked-hind-ul">
+                                        
+                                    </ul>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="l-chose-right">
+                            <div class="l-chose-rignt-le">
+                                <div class="l-selects">
+                                    <p>作品</p>
+                                    <div class="l-selects-more">
+                                        <ul class="l-selects-more-ul">
+                                            <li>作品</li>
+                                            <li>设计师</li>
+                                            <li>字体</li>
+                                            <li>文章</li>
+                                            <li>资讯</li>
+                                            <li>赛事</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <span class="iconfont icon-xiala- "></span>
+                                <span class=" iconfont icon-caozuo-shangla"></span>
+                            </div>
+                            <div class="l-chose-rignt-ri">
+                                <input type="text" placeholder="请输入关键词" class="l-chose-input">
+                                <span class="l-chose-search"></span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="three">
+        	<div class="three1">
+        		<span class="spa31">全部</span>
+        		<span class="spa32">进行中</span>
+        		<span class="spa33">已结束</span>
+        		<span class="spa34">我要举办赛事</span>
+        	</div>
+        </div> 
+
+        <div class="five">
+            <div class="ff">
+                <span class="spaff"></span>
+            </div>
+        	<div class="five1">
+        		<ul class="uls51">
+        			<li class="li51">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li52">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li53">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li54">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li55">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li56">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li57">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li58">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li59">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li510">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li511">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        			<li class="li512">
+        				<span class="spa51"></span>
+        				<h3 class="h51">
+                            平安宝安主题宣传海报设计大赛
+                        </h3>
+                        <p class="p51">进行中</p>
+                        <p class="pp51">深圳市宝安区委政法委“平安宝安主题宣传海报设计大赛”征集开始了！</p>
+                        <div class="d1">
+                        	<b class="b1"></b>
+                        	<span class="ppp51">2019.09.18-2019.10.12</span>
+                        </div>
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+
+
+
+                <!-- 页码 -->
+    	<div class="four">
+    		<ul class="uls41">
+    			<li class="li41">
+    				<p id="p41" style="color:white">◄</p>
+    			</li>
+    			<li class="li42">
+    				<p class="p42" style="color:white">1</p>
+    			</li>
+    			<li class="li43">
+    				<p class="p43">2</p>
+    			</li>
+    			<li class="li44">
+    				<p class="p44">3</p>
+    			</li>
+    			<li class="li45">
+    				<p class="p45">4</p>
+    			</li>
+    			<li class="li46">
+    				<p class="p46">5</p>
+    			</li>
+    			<li class="li47">
+    				<p class="p47">6</p>
+    			</li>
+    			<li class="li48" style="border: 0px solid #fff">
+    				<p class="p48">......</p>
+    			</li>
+    			<li class="li49">
+    				<p class="p49">777</p>
+    			</li>
+    			<li class="li410">
+    				<p id="p410" style="color:white">►</p>
+    			</li>
+    			<span class="spa41">跳转到：</span>
+    			<li class="li412">
+    				<input type="text" class="ipt41">
+    			</li>
+    			<li class="li413">
+    				<p class="p411">GO</p>
+    			</li>
+    		</ul>
+    	</div>
+    	<!-- 最底部 -->
+		<footer class="l-main-footer">
+			<div class="l-footer-heart">
+				<div class="l-endlist-box">
+					<div class="l-end-about l-end">
+					<h3 class="l-end-title">关于</h3>
+					<ul>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">版权声明</a></li>
+						<li><a href="#">关于隐私</a></li>
+						<li><a href="#">设计币</a></li>
+					</ul>
+				</div>
+				<div class="l-end-help l-end">
+					<h3 class="l-end-title">帮助</h3>
+					<ul>
+						<li><a href="#">审核标准</a></li>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">意见反馈</a></li>
+					</ul>
+				</div>
+				<div class="l-end-official l-end">
+					<h3 class="l-end-title">官方微信</h3>
+					<div class="l-end-erweima">
+						<img src="../imgs/lyj09.jpg" alt="">
+					</div>
+				</div>
+				<div class="l-end-connect l-end">
+					<h3 class="l-end-title">联系我们</h3>
+					<div class="l-end-qq"></div>
+					<ul>
+						<li><a href="#">QQ：</a></li>
+						<li><a href="#">
+                     		   电话：0371-86068866
+                    		</a></li>
+						<li><a href="#">
+                    投稿：cndesign@163.com
+                </a></li>
+						<li><a href="#">
+                    地址：郑州市国家大学科技园东区9号楼2层
+                </a></li>
+					</ul>
+				</div>
+				<div class="l-end-copyright l-end">
+					<h3 class="l-end-title">版权信息</h3>
+					<ul>
+						<li><p>                        CND设计网（CNDESIGN）会员所发布展示的 “原创作品/文章” 版权归原作者所有，任何商业用途均需联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。
+						<br><br>
+
+                        Copyright ?2006-2019 CND设计网
+                    
+						</p></li>
+						
+					</ul>
+				</div>
+				</div>
+				
+				<div class="l-final">
+					<p class="final-end">
+						<a href="#" class="moble-link-a"><span class="moble-link"></span><span class="need">移动 Android 版</span></a>
+						<a href="#"><span class="need">豫 ICP 备16038122号-2</span></a>
+						<a href="#" class="final-end-img-a"><span class="final-end-img"></span><span class="need"> &nbsp; &nbsp;&nbsp;豫公网安备 41019702002261号</span></a>
+					</p>
+				</div>
+			</div>
+		</footer>  
+    </body>
+</html>

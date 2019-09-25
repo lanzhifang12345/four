@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>登录注册</title>
+		<link rel="stylesheet" href="../css/dlzc.css">
+		<script src="../js/jquery-3.4.1.js"></script>
+		<script>
+			$(function(){
+				$(".s4").click(function(){
+					$(".uls").css('display', 'none');
+					$(".one7").css('display', 'none');
+					$(".one3").css('display', 'block');
+					$(".one3").animate({width:'420px'},200,);
+
+				});
+				$(".s3").click(function(){
+					
+					$(".one3").animate({width:'35px'},200,);
+					$(".uls").css('display', 'block');
+					$(".one7").css('display', 'block');
+					$(".one3").css('display', 'none');
+					
+				});
+
+				$('.one4').mouseover(function(event){
+					$(".uls1").css('display', 'block');
+				});
+
+				$('.one4').mouseout(function(event) {
+					$(".uls1").css('display', 'none');
+				});
+
+				$('.lione').eq(1).mouseover(function(event){
+					$(".bo1").css('display', 'block');
+					$(".uls2").css('display', 'block');
+				});
+
+				$('.lione').eq(1).mouseout(function(event) {
+					$(".bo1").css('display', 'none');
+					$(".uls2").css('display', 'none');
+				});
+
+				$('.lione').eq(2).mouseover(function(event){
+					$(".bo1").css('display', 'block');
+					$(".uls3").css('display', 'block');
+				});
+
+				$('.lione').eq(2).mouseout(function(event) {
+					$(".bo1").css('display', 'none');
+					$(".uls3").css('display', 'none');
+				});
+
+				$('.lione').eq(3).mouseover(function(event){
+					$(".bo1").css('display', 'block');
+					$(".uls4").css('display', 'block');
+				});
+
+				$('.lione').eq(3).mouseout(function(event) {
+					$(".bo1").css('display', 'none');
+					$(".uls4").css('display', 'none');
+				});
+
+				$('.lione').eq(4).mouseover(function(event){
+					$(".bo1").css('display', 'block');
+					$(".uls5").css('display', 'block');
+				});
+
+				$('.lione').eq(4).mouseout(function(event) {
+					$(".bo1").css('display', 'none');
+					$(".uls5").css('display', 'none');
+				});
+
+				$('.litwo').mouseover(function(event){
+					$(".bo1").css('display', 'block');
+					$(".uls6").css('display', 'block');
+				});
+
+				$('.litwo').mouseout(function(event) {
+					$(".bo1").css('display', 'none');
+					$(".uls6").css('display', 'none');
+				});
+
+				var a;
+				var b;
+				var re1=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+				var re2=/^[0-9a-zA-Z_]{6,15}$/;
+				var re3=/^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+				var re4=/^[0-9]{4}$/;
+                var re5=/^[0-9a-zA-Z_]{4}$/;
+
+				$('.input4').blur(function(event) {
+					a=$('.input4').val();
+					b=$('.input5').val();
+					if(a==''){
+						$(".two5").empty();
+				        $(".two5").append("请输入账号");
+				        $('.input2').css('background', 'rgb(221, 221, 221)');
+					}else{
+						if(re1.test(a) || re3.test(a)){
+				    		$(".two5").empty();
+				    		if (a&&b) {
+				    			if(re2.test(b)){
+				    				$('.input2').css('background', 'red');
+				    			}else{
+				    				$(".two5").empty();
+				    				$(".two5").append("密码格式错误");
+				    				$('.input2').css('background', 'rgb(221, 221, 221)');
+				    			}
+							
+							}else{
+								$('.input2').css('background', 'rgb(221, 221, 221)');
+							}
+				   	 	}else{
+				        	$(".two5").empty();
+				        	$(".two5").append("账号格式错误");
+				       		$('.input2').css('background', 'rgb(221, 221, 221)');
+				   		}
+					}
+				});
+
+				$('.input5').blur(function(event) {
+					a=$('.input4').val();
+					b=$('.input5').val();
+
+					if(a==''){
+						$(".two5").empty();
+				        $(".two5").append("请输入账号");
+				        $('.input2').css('background', 'rgb(221, 221, 221)');
+					}else{
+						if(b==''){
+							$(".two5").empty();
+				        	$(".two5").append("请输入密码");
+				        	$('.input2').css('background', 'rgb(221, 221, 221)');
+						}else{
+							if(re2.test(b)){
+				    			$(".two5").empty();
+				    			if (a&&b) {
+				    				if(re1.test(a) || re3.test(a)){
+				    					$('.input2').css('background', 'red');
+				    				}else{
+				    					$(".two5").empty();
+				        				$(".two5").append("账号格式错误");
+				    					$('.input2').css('background', 'rgb(221, 221, 221)');
+				    				}
+							
+								}else{
+									$('.input2').css('background', 'rgb(221, 221, 221)');
+								}
+				   	 		}else{
+				        		$(".two5").empty();
+				        		$(".two5").append("密码格式错误");
+				       			$('.input2').css('background', 'rgb(221, 221, 221)');
+				   			}
+						}
+
+					}	
+				});
+
+				$('.dx').mouseover(function(event){
+					$(".dx").css('cursor', 'pointer');
+				});
+
+				$(".dx").click(function(){
+					$(".two2").css('display', 'none');
+					$(".two3").css('display', 'none');
+					$(".two22").css('display', 'block');
+					$(".two33").css('display', 'block');
+					$(".btn1").css('display', 'block');
+					$(".zh").css('border-bottom', 'none');
+					$(".zh").css('color', '#393939');	
+					$(".dx").css('color', '#F2264C');
+					$(".dx").css('border-bottom', '2px solid #F2264C');			
+				});
+
+				$('.zh').mouseover(function(event){
+					$(".zh").css('cursor', 'pointer');
+				});
+
+				$(".zh").click(function(){
+					$(".two2").css('display', 'block');
+					$(".two3").css('display', 'block');
+					$(".two22").css('display', 'none');
+					$(".two33").css('display', 'none');
+					$(".btn1").css('display', 'none');
+					$(".dx").css('border-bottom', 'none');
+					$(".dx").css('color', '#393939');
+					$(".zh").css('color', '#F2264C');
+					$(".zh").css('border-bottom', '2px solid #F2264C');
+					
+				});
+
+				$('.input44').blur(function(event) {
+					var a1=$('.input44').val();
+					var b1=$('.input55').val();
+					if(a1==''){
+						$(".two5").empty();
+				        $(".two5").append("请输入手机号码");
+				        $('.input2').css('background', 'rgb(221, 221, 221)');
+					}else{
+						if(re3.test(a1)){
+				    		$(".two5").empty();
+				    		if (a1&&b1) {
+				    			if(re4.test(b1)){
+				    				$('.input2').css('background', 'red');
+				    			}else{
+				    				$(".two5").empty();
+				    				$(".two5").append("验证码格式错误");
+				    				$('.input2').css('background', 'rgb(221, 221, 221)');
+				    			}
+							
+							}else{
+								$('.input2').css('background', 'rgb(221, 221, 221)');
+							}
+				   	 	}else{
+				        	$(".two5").empty();
+				        	$(".two5").append("请输入正确手机号");
+				       		$('.input2').css('background', 'rgb(221, 221, 221)');
+				   		}
+					}
+				});
+
+				$('.input55').blur(function(event) {
+					var a2=$('.input44').val();
+					var b2=$('.input55').val();
+
+					if(a2==''){
+						$(".two5").empty();
+				        $(".two5").append("请输入手机号");
+				        $('.input2').css('background', 'rgb(221, 221, 221)');
+					}else{
+						if(b2==''){
+							$(".two5").empty();
+				        	$(".two5").append("请输入验证码");
+				        	$('.input2').css('background', 'rgb(221, 221, 221)');
+						}else{
+							if(re4.test(b2)){
+				    			$(".two5").empty();
+				    			if (a2&&b2) {
+				    				if(re3.test(a2)){
+				    					$('.input2').css('background', 'red');
+				    				}else{
+				    					$(".two5").empty();
+				        				$(".two5").append("请输入正确手机号");
+				    					$('.input2').css('background', 'rgb(221, 221, 221)');
+				    				}
+							
+								}else{
+									$('.input2').css('background', 'rgb(221, 221, 221)');
+								}
+				   	 		}else{
+				        		$(".two5").empty();
+				        		$(".two5").append("验证码格式错误");
+				       			$('.input2').css('background', 'rgb(221, 221, 221)');
+				   			}
+						}
+
+					}	
+				});
+
+				$('.btn1').click(function(event) {
+					var a2=$('.input44').val();
+					if(a2==''){
+						$(".two5").empty();
+				        $(".two5").append("请输入手机号");
+					}
+				});
+				$('.btn2').click(function(event) {
+					var a2=$('.inut1').val();
+					if(a2==''){
+						$(".bx6").empty();
+				        $(".bx6").append("请输入手机号");
+					}
+				});
+
+
+				$('.s1').click(function(event) {
+					$('.three1').css('display','none');
+					$('.two1').css('display','block');
+				});
+
+				$('.s2').click(function(event) {
+					$('.two1').css('display','none');
+					$('.three1').css('display','block');
+				});
+
+				$('.zc1').click(function(event) {
+					$('.two1').css('display','none');
+					$('.three1').css('display','block');
+				});
+
+				var isShow=true;
+				$('.spa321').click(function(event) {
+					$('.spa321').css('display','none');
+					$('.spa322').css('display','block');
+					var v=document.getElementById("id1");
+		            if (isShow) {
+		                v.type="text";
+		                isShow=false;
+		            }else{
+		                v.type="password";
+		                isShow=true;
+		            }
+				});
+				$('.spa322').click(function(event) {
+					$('.spa322').css('display','none');
+					$('.spa321').css('display','block');
+
+					var v=document.getElementById("id1");
+		            if (isShow) {
+		                v.type="text";
+		                isShow=false;
+		            }else{
+		                v.type="password";
+		                isShow=true;
+		            }
+
+				});
+
+				$('.spn2').click(function(event) {
+					$('.three1').css('display','none');
+					$('.two1').css('display','block');
+				});
+
+				$('.gr').mouseover(function(event){
+					$(".gr").css('cursor', 'pointer');
+				});
+				$('.jg').mouseover(function(event){
+					$(".jg").css('cursor', 'pointer');
+				});
+
+				$('.gr').click(function(event) {
+					$('.gr').css('border-bottom','2px solid #F2264C');
+					$('.jg').css('border-bottom','none');
+					$('.jg').css('color','#393939');
+					$('.gr').css('color','#F2264C');
+
+				});
+
+				$('.jg').click(function(event) {
+					$('.jg').css('border-bottom','2px solid #F2264C');
+					$('.gr').css('border-bottom','#393939');
+					$('.jg').css('color','#F2264C');
+					$('.gr').css('color','#393939');
+				});
+
+
+				$('.inut1').blur(function(event) {
+					var n1=$('.inut1').val();
+                    var n2=$('.inut2').val();
+                    var n3=$('.inut3').val();
+                    var n4=$('.inut4').val();
+
+                    if(n1==''){
+                    	$(".bx6").empty();
+                        $(".bx6").append("请输入手机号");
+                        $('.inut6').css('background', 'rgb(221, 221, 221)');
+                    }else{
+                    	$(".bx6").empty();
+                    	if(re3.test(n1)){
+                    		if(n2==''){
+                    			$(".bx6").empty();
+                       			$(".bx6").append("请输入密码");
+                       			$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    		}else{
+								if(re2.test(n2)){
+									if(n3==''){
+                       					$(".bx6").empty();
+                       					$(".bx6").append("请输入文字验证码");
+                       					$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       				}else{
+                       					if(re5.test(n3)){
+                       						if(n4==''){
+                       							$(".bx6").empty();
+                       							$(".bx6").append("请输入短信验证码");
+                       							$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       						}else{
+                       							if(re4.test(n4)){
+                       								$('.inut6').css('background', 'red');
+                       							}else{
+                       								$(".bx6").empty();
+                       								$(".bx6").append("短信验证码格式错误");
+                       								$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       							}
+                       						}
+                       					}else{
+                       						$(".bx6").empty();
+                       						$(".bx6").append("文字验证码格式错误");
+                       						$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       					}
+                       				}
+                    				
+                       				
+                    			}else{
+                    				$(".bx6").empty();
+                       				$(".bx6").append("输入的密码有误");
+                       				$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    			}
+                    		}
+                    	}else{
+                    		$(".bx6").empty();
+                       		$(".bx6").append("输入的手机号有误");
+                       		$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    	}
+                    }
+				});
+
+				$('.inut2').blur(function(event) {
+					var n1=$('.inut1').val();
+                    var n2=$('.inut2').val();
+                    var n3=$('.inut3').val();
+                    var n4=$('.inut4').val();
+
+                    if(n1==''){
+                    	$(".bx6").empty();
+                        $(".bx6").append("请输入手机号");
+                        $('.inut6').css('background', 'rgb(221, 221, 221)');
+                    }else{
+                    	$(".bx6").empty();
+                    	if(re3.test(n1)){
+                    		if(n2==''){
+                    			$(".bx6").empty();
+                       			$(".bx6").append("请输入密码");
+                       			$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    		}else{
+								if(re2.test(n2)){
+									if(n3==''){
+                       					$(".bx6").empty();
+                       					$(".bx6").append("请输入文字验证码");
+                       					$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       				}else{
+                       					if(re5.test(n3)){
+                       						if(n4==''){
+                       							$(".bx6").empty();
+                       							$(".bx6").append("请输入短信验证码");
+                       							$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       						}else{
+                       							if(re4.test(n4)){
+                       								$('.inut6').css('background', 'red');
+                       							}else{
+                       								$(".bx6").empty();
+                       								$(".bx6").append("短信验证码格式错误");
+                       								$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       							}
+                       						}
+                       					}else{
+                       						$(".bx6").empty();
+                       						$(".bx6").append("文字验证码格式错误");
+                       						$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       					}
+                       				}
+                    				
+                       				
+                    			}else{
+                    				$(".bx6").empty();
+                       				$(".bx6").append("输入的密码有误");
+                       				$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    			}
+                    		}
+                    	}else{
+                    		$(".bx6").empty();
+                       		$(".bx6").append("输入的手机号有误");
+                       		$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    	}
+                    }
+				});
+
+
+
+				$('.inut3').blur(function(event) {
+					var n1=$('.inut1').val();
+                    var n2=$('.inut2').val();
+                    var n3=$('.inut3').val();
+                    var n4=$('.inut4').val();
+
+                    if(n1==''){
+                    	$(".bx6").empty();
+                        $(".bx6").append("请输入手机号");
+                        $('.inut6').css('background', 'rgb(221, 221, 221)');
+                    }else{
+                    	$(".bx6").empty();
+                    	if(re3.test(n1)){
+                    		if(n2==''){
+                    			$(".bx6").empty();
+                       			$(".bx6").append("请输入密码");
+                       			$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    		}else{
+								if(re2.test(n2)){
+									if(n3==''){
+                       					$(".bx6").empty();
+                       					$(".bx6").append("请输入文字验证码");
+                       					$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       				}else{
+                       					if(re5.test(n3)){
+                       						if(n4==''){
+                       							$(".bx6").empty();
+                       							$(".bx6").append("请输入短信验证码");
+                       							$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       						}else{
+                       							if(re4.test(n4)){
+                       								$('.inut6').css('background', 'red');
+                       							}else{
+                       								$(".bx6").empty();
+                       								$(".bx6").append("短信验证码格式错误");
+                       								$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       							}
+                       						}
+                       					}else{
+                       						$(".bx6").empty();
+                       						$(".bx6").append("文字验证码格式错误");
+                       						$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       					}
+                       				}
+                    				
+                       				
+                    			}else{
+                    				$(".bx6").empty();
+                       				$(".bx6").append("输入的密码有误");
+                       				$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    			}
+                    		}
+                    	}else{
+                    		$(".bx6").empty();
+                       		$(".bx6").append("输入的手机号有误");
+                       		$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    	}
+                    }
+				});
+
+				$('.inut4').blur(function(event) {
+					var n1=$('.inut1').val();
+                    var n2=$('.inut2').val();
+                    var n3=$('.inut3').val();
+                    var n4=$('.inut4').val();
+
+                    if(n1==''){
+                    	$(".bx6").empty();
+                        $(".bx6").append("请输入手机号");
+                        $('.inut6').css('background', 'rgb(221, 221, 221)');
+                    }else{
+                    	$(".bx6").empty();
+                    	if(re3.test(n1)){
+                    		if(n2==''){
+                    			$(".bx6").empty();
+                       			$(".bx6").append("请输入密码");
+                       			$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    		}else{
+								if(re2.test(n2)){
+									if(n3==''){
+                       					$(".bx6").empty();
+                       					$(".bx6").append("请输入文字验证码");
+                       					$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       				}else{
+                       					if(re5.test(n3)){
+                       						if(n4==''){
+                       							$(".bx6").empty();
+                       							$(".bx6").append("请输入短信验证码");
+                       							$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       						}else{
+                       							if(re4.test(n4)){
+                       								$('.inut6').css('background', 'red');
+                       							}else{
+                       								$(".bx6").empty();
+                       								$(".bx6").append("短信验证码格式错误");
+                       								$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       							}
+                       						}
+                       					}else{
+                       						$(".bx6").empty();
+                       						$(".bx6").append("文字验证码格式错误");
+                       						$('.inut6').css('background', 'rgb(221, 221, 221)');
+                       					}
+                       				}
+                    				
+                       				
+                    			}else{
+                    				$(".bx6").empty();
+                       				$(".bx6").append("输入的密码有误");
+                       				$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    			}
+                    		}
+                    	}else{
+                    		$(".bx6").empty();
+                       		$(".bx6").append("输入的手机号有误");
+                       		$('.inut6').css('background', 'rgb(221, 221, 221)');
+                    	}
+                    }
+				});
+
+
+
+
+
+			})
+		</script>
+	</head>
+	<body>
+		<div class="over">
+			<div class="one">	
+				<div class="one1">
+					<a href="" class="aone">
+						<img src="../imgs/lyj03.png" alt="">
+					</a>
+					<ul class="uls">
+						<li class="lione"><a href="../index.html">首页</a></li>
+						<li class="lione"><a href="资讯.html">资讯</a></li>
+						<li class="lione"><a href="作品.html">作品</a></li>
+						<li class="lione"><a href="字体.html">字体</a></li>
+						<li class="lione"><a href="文章.html">文章</a></li>
+						<li class="lione"><a href="赛事.html">赛事</a></li>
+						<li class="litwo"><a href="人才网.html">人才网</a></li>
+						<li class="lithree"><a href="#">设计交易</a></li>
+						<li class="lithree"><a href="网址导航.html">网址导航</a></li>
+					</ul>
+
+					<div class="one7">
+						<span class="s4"></span>
+						<b class="line"></b>
+					</div>
+					
+					<div class="one2">
+						<span class="s1">登录&nbsp;</span>
+						<b class="line"></b>
+						<span class="s2">&nbsp;注册</span>
+					</div>
+
+					<div class="one3">
+						<div class="one4">
+							<b class="line" style="float:left"></b>
+							<p class="p1">作品</p>
+							
+							<b class="line" style="float:right"></b>
+							<p class="p2">◇</p>
+							 <ul class="uls1">
+							 	<li>作品</li>
+							 	<li>设计师</li>
+							 	<li>字体</li>
+							 	<li>文章</li>
+							 	<li>资讯</li>
+							 	<li>赛事</li>
+							 </ul>
+						</div>
+						<div class="one5" >
+							<input type="text" class="input1" placeholder="请输入关键词";>
+						</div>
+						<div class="one6">
+							<span class="s3"></span>
+							<b class="line"></b>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="two"> 
+				<div class="two1">
+					<h1 class="hh1">
+						<img src="../imgs/lyj02.png" alt="">
+					</h1>
+					<div class="box1">
+						<span class="zh">账户登录</span>
+						<span class="dx">短信登录</span>
+					</div>
+					<div class="box2">
+						<div class="two2">
+							<span class="spa1"></span>
+							<input type="text" class="input4" placeholder="手机号/邮箱" >
+						</div>
+						<div class="two3">
+							<span class="spa2"></span>
+							<input type="password" class="input5" placeholder="密码"">
+						</div>
+						<div class="two22">
+							<span class="spa11"></span>
+							<input type="text" class="input44" placeholder="请输入手机号码" >
+						</div>
+						<div class="two33">
+							<span class="spa22"></span>
+							<input class="input55" placeholder="短信验证码">
+						</div>
+
+						<button class="btn1">发送验证码</button>
+
+						<div class="two4">
+							<label class="f1">
+							<input type="checkbox" class="input3" >
+							记住我
+							</label>
+							<p class="pc1">忘记密码？</p>
+
+						</div>
+						<div class="two5"></div>
+						<input type="text" class="input2" value="立即登录" readonly="readonly">
+						<div class="two6">
+							<span class="sp0">还没有账号？</span>
+							<span class="zc1">注册</span>
+						</div>
+					</div>
+					<div class="box3">
+						<div class="two7">
+							<span class="sp1">第三方登录</span>
+							<span class="sp2"></span>
+						</div>
+						<div class="two8">
+							<span class="sp3"></span>
+							<span class="sp4"></span>
+							<span class="sp5"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="bo1">
+					<div class="di1">
+						<ul class="uls2">
+							<li class="li2">国内资讯</li>
+							<li class="li2">国际资讯</li>
+							<li class="li2">活动展览</li>
+							<li class="li2">人物访谈</li>
+							<li class="li2">行业聚焦</li>
+							<li class="li2">原创推荐</li>
+						</ul>
+						<ul class="uls3">
+							<li class="li3">平面</li>
+							<li class="li3">包装</li>
+							<li class="li3">室内</li>
+							<li class="li3">工业</li>
+							<li class="li3">网页</li>
+							<li class="li3">插画</li>
+							<li class="li3">艺术</li>
+							<li class="li3">摄影</li>
+							<li class="li3">其他</li>
+							<li class="li3">观点</li>
+							<li class="li3">教程</li>
+						</ul>
+						<ul class="uls4">
+							<li class="li4">字体</li>
+							<li class="li4">灵感</li>
+							<li class="li4">原创</li>
+							<li class="li4">字体下载</li>
+						</ul>
+						<ul class="uls5">
+							<li class="li5">观点/经验</li>
+							<li class="li5">教程</li>
+						</ul>
+						<ul class="uls6">
+							<li class="li6">最新招聘</li>
+							<li class="li6">职位</li>
+							<li class="li6">人才</li>
+						</ul>
+					</div>
+					
+				</div>
+
+				<div class="three1">
+					<h1 class="hh1">
+						<img src="../imgs/lyj02.png" alt="">
+					</h1>
+					<div class="box1">
+						<span class="gr">个人注册</span>
+						<span class="jg">机构注册</span>
+					</div>
+					<div class="bb1">
+						<div class="bx1">
+							<span class="spa31"></span>
+							<input type="text" class="inut1" placeholder="请输入手机号码" >
+						</div>
+						<div class="bx2">
+							<span class="spa32"></span>
+							<input type="password" class="inut2" placeholder="密码" id="id1" >
+							<span class="spa321"></span>
+							<span class="spa322"></span>
+						</div>
+							
+						<div class="bx3">
+							<span class="spa33"></span>
+							<input type="text" class="inut3" placeholder="文字验证码" >
+							<span class="spa331">
+								<img src="../imgs/lyj06.PNG" alt="" class="img1">
+							</span>
+						</div>
+						<div class="bx4">
+
+							<span class="spa34"></span>
+							<input class="inut4" placeholder="短信验证码">
+							<button class="btn2">发送验证码</button>
+
+						</div>
+						<div class="bx5">
+						<label for="aa" class="lab11">
+							<input type="checkbox" class="in1" id="aa" name="in1" checked='true'>		
+								阅读并同意CND设计网	
+								<span class="spp2">《版权声明》</span>
+								<span class="spp3">《隐私保护条款》</span>
+						</label>
+
+							
+						</div>
+						<div class="bx6">
+							<span class="spa36"></span>
+						</div>
+						<input type="submit" class="inut6" value="立即注册">
+
+						<div class="bx7">
+							<span class="spn1">已有账号？</span>
+							<span class="spn2">去登陆</span>
+						</div>
+						<div class="bx8">
+							<div class="bxx1">
+								<span class="ssp1">第三方登录</span>
+								<span class="ssp2"></span>
+							</div>
+						</div>
+
+						<div class="bx9">
+							<span class="sp3"></span>
+							<span class="sp4"></span>
+							<span class="sp5"></span>
+						</div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+
+	 
+	</body>
+</html>

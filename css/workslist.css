@@ -1,0 +1,262 @@
+﻿/* worksList.css */
+body {
+    background: #FFF;
+}
+body{
+    min-width: 1200px;
+    padding-left: 0;
+    padding-right: 0px;
+
+}
+.cnd-fixed{display:none;}
+/* 作品列表 */
+.collapse_navbar {
+    display: none;
+}
+.top_search_box {
+    /*display: none;*/
+}
+.nav_box_v1 {
+    /*margin-bottom: 34px;*/
+}
+.news_sort_box {
+    /*margin-bottom: 40px;*/
+}
+.news_sort_li > a {
+    /*display: inline-block;*/
+    /*color: #A2A3A7;*/
+    /*margin-right: 48px;*/
+}
+.news_sort_li > a.active {
+    color: #EB3E48;
+}
+.news_tabs_box {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.news_tabs_box > .content_box {
+    position: relative;
+    margin-top:18px;
+}
+.sub_sel_contain {
+	display: inline-block;
+	position: relative;
+    /*margin-left: 31px;*/
+    /*margin-right: 31px;*/
+}
+.sub_sel_contain > .news_tabs_a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #E70012;
+    background: #E70012;
+    color: #FFF;
+}
+.sub_sel_contain > .news_tabs_a.pr {
+    box-sizing: border-box;
+    width: 98px;
+    height: 36px;
+    line-height: 36px;
+    padding-right: 8px;
+}
+.c-sub_sel {
+	position: absolute;
+	z-index: 120;
+	background: #FFF;
+	display: none;
+    border: 1px solid #E70012;
+	/*border-top: 1px solid red;*/
+}
+.sub_sel_contain:hover > .c-sub_sel {
+	display: block;
+}
+.sub_li_a > a,.sub_li_b > a {
+	display: inline-block;
+    width: 96px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+	color: #E70012;
+}
+.sub_li_a > a:hover,.sub_li_b > a:hover {
+	color: #FFF;
+    background: #E70012;
+}
+.sub_sel_contain > .arrow_down {
+    right: 48px;
+    top: 16px;
+}
+.sub_sel_contain:hover >  .arrow_down {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.sub_sel_contain > .arrow_down > s {
+    color: #FFF;
+}
+.news_tabs_a {
+    display: inline-block;
+    /*width: 116px;*/
+    /*height: 44px;*/
+    /*line-height: 44px;*/
+    /*font-size: 18px;*/
+    width: 96px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #090810;
+    border: 1px solid #090810;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-right: 34px;
+}
+.mr0 {margin-right: 0;}
+.news_tabs_a.active {
+    color: #ffffff;
+    background: #090810;
+    font-weight: 600;
+}
+.hold_events {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: block;
+    width: 106px;
+    height: 38px;
+    line-height: 38px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    background: #F43700;
+    font-weight: 600;
+}
+.hold_events:hover {
+    color: #FFF;
+}
+.c-list_box {
+    margin-bottom: 10px;
+}
+.production_lists_box {
+    box-sizing: border-box;
+    width: 298px;
+    float: left;
+    border: 1px solid transparent;
+    padding: 6px 8px 0 8px;
+    margin-bottom: 30px;
+}
+.production_lists_box:hover {
+	border: 1px solid #1B1B1B;
+}
+.pl_img_box .img_box {
+    display: inline-block;
+    width: 280px;
+    height: 206px;
+    margin-top: 3px;
+    overflow: hidden;
+    position: relative;
+}
+.zoom {
+    position: absolute;
+    display: inline-block;
+    width: 280px;
+    height: 206px;
+    vertical-align: middle;
+}
+.prod_info_box {
+    margin-top: 8px;
+}
+.pi_person_box {
+    margin: 0 auto;
+    margin-top: 6px;
+    float: left;
+}
+.pi_person_box > a > img {
+    /*margin-top: 6px;*/
+    width: 34px;
+    height: 34px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.pi_right {
+    padding-left: 40px;
+}
+.pi_right a {
+    display: inline-block;
+    max-width: 200px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.pi_right .pi_title {
+    font-size: 14px;
+    margin-top: 4px;
+    font-weight: bold;
+    color: #423E33;
+}
+.pi_right .pi_title:hover,.pi_right .pi_title.hover {
+    color: #ED1A23;
+}
+.prod_info_box .pi_right .pi_name {
+    height: 16px;
+    line-height: 16px;
+    color: #707070;
+}
+.prod_info_box .pi_right .pi_name:hover {
+    font-weight: 600;
+}
+.original_info {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+.pi_bottom .original_info .sort_pm {
+    padding: 2px 6px;
+    background: #ED1B23;
+    color: #FFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.pi_bottom .original_info .sort_pm.zz{
+    background: #999;
+}
+.pi_bottom .original_info .prod_date {
+    margin-left: 10px;
+    font-weight: normal;
+    color: #B2B1B1;
+}
+.boxs {
+    color: #B2B1B1;
+    font-size: 12px;
+    overflow: hidden;
+    padding-top: 8px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.lists_box {
+    float: left;
+    margin-right: 20px;
+}
+.boxs .iconfont {
+    padding: 2px 12px;
+    margin-right: 4px;
+    background: url(../images/spirit.png);
+}
+.iconfont.icon-liulanliang {
+    background-position: 0 -173px;
+}
+.iconfont.icon-pinglun {
+    background-position: -0 -192px;
+}
+.iconfont.icon-zan {
+    background-position: 0 -216px;
+}
